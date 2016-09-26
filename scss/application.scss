@@ -4,6 +4,7 @@ $dark: #424652;
 $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #e9e9e9;
+$white: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -74,6 +75,7 @@ p, li {
 p, ul, ol, {
   margin: 0 0 1.6em 0;
 }
+
 hr {
   width: 3em;
   display: block;
@@ -110,7 +112,6 @@ hr {
 }
 
 #page_title {
-  font-weight: 700;
   text-align: center;
   border-bottom: 1px solid $border;
   padding: 3em 0;
