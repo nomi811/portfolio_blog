@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Nomi Vos - Portfolio, Blog</title>
   <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css"> -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -15,7 +15,7 @@
     <%= link_to 'Nomi Vos', root_path, class: 'name' %>
     <nav>
       <%= link_to 'Articles', posts_path %>
-      <a href="#">Projects</a>
+      <%= link_to 'Projects', projects_path %>
       <a href="#">Contact</a>
     </nav>
   </header>
