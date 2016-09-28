@@ -17,22 +17,22 @@
     <hr>
 
     <div id="share_box">
-    <p>Share The Article Title</p>
+    <p>Share <%= @post.title %></p>
 
     <!-- opens a new box to share the article on twitter -->
-    <!-- <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @mackenziechild - &amp;url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-      <i class='fa fa-twitter'></i>
-    </a> -->
+    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @nomivos - &amp;url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-twitter"></i>
+    </a>
 
     <!-- opens a new box to share the article on facebook -->
-    <!-- <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class='fa fa-facebook'></i></a -->
+    <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
 
     <!-- opens a new box to share the article on google+ -->
-    <!-- <a onclick="javascript:window.open('http://www.plus.google.com/share?url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class='fa fa-google-plus'></i></a> -->
+    <a onclick="javascript:window.open('http://www.plus.google.com/share?url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 
     <!-- opens a new box to share the article on linkedin -->
     <!-- https://www.linkedin.com/cws/share?url=http%3A%2F%2Fgoogle.com -->
-    <a onclick="javascript:window.open('https://www.linkedin.com/cws/share?url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class='fa fa-linkedin'></i></a>
+    <a onclick="javascript:window.open('https://www.linkedin.com/cws/share?url=<%= url_for([@post, { only_path: false }]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
     <!-- <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> -->
     <!-- <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
     </div>
