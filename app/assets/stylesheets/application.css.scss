@@ -98,6 +98,8 @@ hr {
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  background-image: url('IMG_1292a background.jpg');
+  background-size: 100% auto;
   .name {
     font-weight: 700;
     font-size: .8em;
@@ -111,12 +113,18 @@ hr {
   }
   nav {
     float: right;
-    padding-top: 1.5rem;
+    margin: 4.5rem 0 0 0;
+    padding: 1.3rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid $border;
     a {
       color: $dark;
       text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1rem;
+      margin: 20rem 1rem 0 0;
+      font-size: 1.3rem;
+      &:hover {
+        color: $highlight;
+      }
     }
   }
 }

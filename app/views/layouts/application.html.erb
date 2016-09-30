@@ -12,8 +12,8 @@
 <body>
 
   <header id="main_navigation" class="clearfix">
-    <%= link_to 'Nomi Vos', root_path, class: 'name' %>
-    <nav>
+    <%= link_to (image_tag "NV-logo-4b.png", class: 'name'), root_path %>
+    <nav class="bottom-aligner">
       <%= link_to 'Articles', posts_path %>
       <%= link_to 'Projects', projects_path %>
       <%= link_to 'Contact', new_contact_path %>
