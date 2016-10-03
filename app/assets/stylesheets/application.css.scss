@@ -12,6 +12,8 @@ $white: #ffffff;
 
 body {
   font-family: 'Raleway', sans-serif;
+  background-image: url('IMG_1292a background.jpg');
+  background-size: 100% auto;
 }
 
 .wrapper {
@@ -98,8 +100,8 @@ hr {
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
-  background-image: url('/assets/images/IMG_1292a background.jpg');
-  background-size: 100% auto;
+
+
   .name {
     font-weight: 700;
     font-size: .8em;
