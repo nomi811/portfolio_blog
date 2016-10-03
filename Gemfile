@@ -20,6 +20,7 @@ gem 'devise', '~> 4.2'
 gem 'figaro'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'aws-sdk', '< 2.0'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
