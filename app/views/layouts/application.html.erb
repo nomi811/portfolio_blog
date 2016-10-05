@@ -4,40 +4,43 @@
   <meta charset="UTF-8">
   <title>Nomi Vos</title>
   <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+  <div id="holder">
+    <header id="main_navigation" class="clearfix">
+      <%= link_to (image_tag "NV-logo-4b.png", class: 'name'), root_path %>
+      <nav class="bottom-aligner">
+        <%= link_to 'Articles', posts_path %>
+        <%= link_to 'Projects', projects_path %>
+        <%= link_to 'Contact', new_contact_path %>
+        <% if user_signed_in? %>
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+        <% end %>
+      </nav>
+    </header>
 
-  <header id="main_navigation" class="clearfix">
-    <%= link_to (image_tag "NV-logo-4b.png", class: 'name'), root_path %>
-    <nav class="bottom-aligner">
-      <%= link_to 'Articles', posts_path %>
-      <%= link_to 'Projects', projects_path %>
-      <%= link_to 'Contact', new_contact_path %>
-      <% if user_signed_in? %>
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-      <% end %>
-    </nav>
-  </header>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
 
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
+    <%= yield %>
 
-  <%= yield %>
-
-  <footer id="main_footer">
-    <p class="copyright">&copy;2016 Nomi Vos</p>
-    <nav>
-      <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
-      <a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    </nav>
-  </footer>
-
-</body>
+    <footer id="main_footer">
+      <p class="copyright">&copy;2016 Nomi Vos</p>
+      <nav>
+        <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+        <a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </nav>
+      <p class="tech">This site was hand coded with Ruby of Rails, JavaScript, HTML5, &amp; CSS3.</p>
+    </footer>
+    </div>
+  </body>
 </html>

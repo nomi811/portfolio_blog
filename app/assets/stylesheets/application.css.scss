@@ -10,11 +10,23 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+#holder {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
+  background-image: url(linen_texture);
 }
 
 .wrapper {
+  position: relative;
+  min-height: 100%;
   width: 90%;
   margin: 0 auto;
 }
@@ -87,7 +99,7 @@ p, ul, ol, {
 }
 
 hr {
-  width: 3em;
+  width: auto;
   display: block;
   height: 2px;
   border: 0;
@@ -141,12 +153,25 @@ hr {
 }
 
 #main_footer {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   padding: 2.5em 5%;
   border-top: 1px solid $border;
+  background: #7b7d81;
   .copyright {
     float: left;
     font-size: .9em;
     margin: 0;
+  }
+  .tech {
+    z-index: -1;
+    text-align: center;
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
   }
   nav {
     float: right;
