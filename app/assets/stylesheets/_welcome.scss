@@ -19,9 +19,20 @@
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  .card_about {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .container_about {
+    width: 100%;
+    padding: 10px 20px;
+    height: 382px;
+  }
   .container {
     padding: 10px 20px;
     height: 382px;
+
   }
   h2 {
     font-size: 1.1rem;
