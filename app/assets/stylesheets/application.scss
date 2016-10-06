@@ -112,7 +112,7 @@ hr {
   border-bottom: 1px solid $border;
   background-image: image-url("flower_background.jpg");
   background-size: 100% auto;
-  .name {
+  .logo_rest, .logo_hover {
     font-weight: 700;
     font-size: .8em;
     letter-spacing: 4px;
@@ -123,8 +123,11 @@ hr {
     color: $dark;
     float: left;
   }
-  .name:hover {
+  .logo_hover:hover {
     border-color: $highlight;
+  }
+  .logo_hover {
+    display: none;
   }
   nav {
     float: right;
