@@ -13,7 +13,8 @@
 <body>
   <div id="holder">
     <header id="main_navigation" class="clearfix">
-      <%= link_to (image_tag "NV-logo-4b.png", class: 'name'), root_path %>
+      <%= link_to (image_tag "NV-logo.png", class: 'logo_rest'), root_path %>
+      <%= link_to (image_tag "NV_logo_hover.png", class: 'logo_hover'), root_path %>
       <nav class="bottom-aligner">
         <%= link_to 'Articles', posts_path %>
         <%= link_to 'Projects', projects_path %>
@@ -43,4 +44,5 @@
     </footer>
     </div>
   </body>
+
 </html>

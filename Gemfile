@@ -21,7 +21,7 @@ gem 'figaro'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'aws-sdk', '< 2.0'
 gem 'puma'
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks', '~> 2.1'
 
 group :development, :test do
   gem 'byebug'
