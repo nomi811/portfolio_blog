@@ -14,11 +14,19 @@
 
 .homepage_content {
   padding-bottom: 40px;
+  .card {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .container {
+    padding: 10px 20px;
+    height: 382px;
+  }
   h2 {
     font-size: 1.1rem;
     text-transform: uppercase;
   }
-
   h3 {
     font-size: 1.35em;
     font-weight: 400;
@@ -34,7 +42,7 @@
   .date {
     font-size: .85em;
     margin-bottom: 2em;
-    color: $light;
+    color: $dark;
   }
   p {
     margin: 0 0 .75em 0;
@@ -47,10 +55,4 @@
     font-weight: 700;
     text-decoration: none;
   }
-}
-
-.homepage_content.polaroid {
-  width: 80%;
-  background-color: $white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

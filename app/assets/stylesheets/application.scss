@@ -123,11 +123,9 @@ hr {
     color: $dark;
     float: left;
   }
-  .logo_hover:hover {
-    border-color: $highlight;
-  }
-  .logo_hover {
+  .logo_hover, .logo_hover:hover {
     display: none;
+    border-color: $highlight;
   }
   nav {
     float: right;
@@ -150,8 +148,8 @@ hr {
 #page_title {
   text-align: center;
   border-bottom: 1px solid $border;
-  padding: 3em 0;
-  font-size: 1rem;
+  padding: 1em 0;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -203,6 +201,7 @@ textarea {
 }
 
 input[type="submit"], .button {
+  margin: 0 0 3em 0;
   outline: none;
   background: transparent;
   border: 2px solid $border;

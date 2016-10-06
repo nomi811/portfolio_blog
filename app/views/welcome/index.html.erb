@@ -1,28 +1,39 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <div class="polaroid">
-      <h2>About</h2>
-      <hr>
-      <p>Some content about <a href="#">myself</a></p>
-      <p>Some more content about myself</p>
+    <div class="card">
+      <div class="container">
+        <h2>About</h2>
+        <hr>
+        <p>Some content about <a href="#">myself</a></p>
+        <p>Some more content about myself</p>
+      </div>
     </div>
   </div>
+
   <div class="col-2 homepage_content">
-    <h2>Articles</h2>
-    <hr>
+    <div class="card">
+      <div class="container">
+        <h2>Articles</h2>
+        <hr>
 
-    <% @posts.each do |post| %>
-      <h3><a href="#"><%= link_to post.title, post %></a></h3>
-      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-    <% end %>
-
+        <% @posts.each do |post| %>
+          <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+      </div>
+    </div>
   </div>
+
   <div class="col-3 homepage_content">
-    <h2>Projects</h2>
-    <hr>
-    <% @projects.each do |project| %>
-      <h3><a href="#"><%= link_to project.title, project %></a></h3>
-      <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-    <% end %>
+    <div class="card">
+      <div class="container">
+        <h2>Projects</h2>
+        <hr>
+        <% @projects.each do |project| %>
+          <h3><a href="#"><%= link_to project.title, project %></a></h3>
+          <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
