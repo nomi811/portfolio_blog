@@ -29,6 +29,9 @@
     padding: 10px 20px;
     height: 382px;
     .image {
+      border: 5px solid $highlight;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
       float: right;
       height: 50%;
       padding-top: 0;
