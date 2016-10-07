@@ -15,7 +15,7 @@
 .homepage_content {
   padding-bottom: 40px;
   .card {
-    width: 80%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -27,13 +27,13 @@
   .container_about {
     width: 100%;
     padding: 10px 20px;
-    height: 400px;
+    height: 500px;
     .image {
       border: 5px solid $highlight;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
       float: right;
-      height: 50%;
+      height: 225px;
       padding-top: 0;
     }
     p {
@@ -43,7 +43,8 @@
   }
   .container {
     padding: 10px 20px;
-    height: 400px;
+    height: 500px;
+    width: 100%;
 
   }
   h2 {
@@ -64,7 +65,7 @@
   }
   .date {
     font-size: .85em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     color: $dark;
   }
   p {
