@@ -2,11 +2,12 @@
   <div class="col-1 about homepage_content">
     <div class="card_about">
       <div class="container_about">
-        <h2>About</h2>
+        <h2>Profile</h2>
         <hr>
-        <p>Some content about <a href="about/index">myself</a></p>
+        <p>Hi! My name is  <a href="about/index">Nomi.</a></p>
         <%= image_tag("me-circle", alt: "A lovely picture of myself", class: 'image') %>
-        <p>Some more content about myself</p>
+        <p>I'm a Junior Web Developer and a dabbler of all things creative.</p>
+        <p>When I was a kid, my brother always told me I wasn't a book worm, I was a book slug. I always have several books going and my most fervent wish is that I had a photographic memory.</p>
       </div>
     </div>
   </div>
@@ -14,7 +15,7 @@
   <div class="col-2 homepage_content">
     <div class="card">
       <div class="container">
-        <h2>Articles</h2>
+        <h2>Posts</h2>
         <hr>
 
         <% @posts.each do |post| %>
