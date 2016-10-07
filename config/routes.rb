@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pattern_design/index'
+
+  get 'photography/index'
+
   get 'about/index'
 
   devise_for :users

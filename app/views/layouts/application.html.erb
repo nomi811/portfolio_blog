@@ -19,6 +19,8 @@
         <%= link_to 'Profile', about_index_path %>
         <%= link_to 'Posts', posts_path %>
         <%= link_to 'Projects', projects_path %>
+        <%= link_to 'Photography', %>
+        <%= link_to 'Pattern Design', %>
         <%= link_to 'Ping Me', new_contact_path %>
         <% if user_signed_in? %>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
