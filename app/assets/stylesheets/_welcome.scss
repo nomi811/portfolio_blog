@@ -28,6 +28,15 @@
     width: 100%;
     padding: 10px 20px;
     height: 382px;
+    .image {
+      float: right;
+      height: 50%;
+      padding-top: 0;
+    }
+    p {
+      display: inline-block;
+      width: 60%;
+    }
   }
   .container {
     padding: 10px 20px;
