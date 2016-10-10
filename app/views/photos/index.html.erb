@@ -1,27 +1,29 @@
-<p id="notice"><%= notice %></p>
+<h1 id="page_title">Listing Photos</h1>
 
-<h1>Listing Photos</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @photos.each do |photo| %>
+<div id="posts_wrapper" class="skinny_wrapper">
+  <table>
+    <thead>
       <tr>
-        <td><%= photo.name %></td>
-        <td><%= link_to 'Show', photo %></td>
-        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @photos.each do |photo| %>
+        <tr>
+          <td><%= photo.name %></td>
+          <td><%= image_tag(attachment_url(photo, :image, :fill, 150, 150)) %></td>
+          <td><%= link_to 'Show', photo %></td>
+          <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+          <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Photo', new_photo_path %>
+
+  <br>
+
+  <%= link_to 'New Photo', new_photo_path %>
+</div>

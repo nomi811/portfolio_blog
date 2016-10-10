@@ -16,10 +16,24 @@
     <%= f.text_field :name %>
   </div>
 
+  <br>
+  <br>
+
   <div>
+    <%= f.label :image %>
     <%= f.attachment_field :image %>
+
+    <% if @photo.image_id? %>
+      <%= image_tag attachment_url(@photo, :image, :fill, 100, 100) %>
+
+      <%= f.check_box :remove_image %>
+      <%= f.label :remove_image %>
+    <% end %>
   </div>
-  
+
+  <br>
+  <br>
+
   <div class="actions">
     <%= f.submit %>
   </div>

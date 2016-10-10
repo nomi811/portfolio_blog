@@ -1,9 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
 
-<p>
-  <strong>Name:</strong>
-  <%= @photo.name %>
-</p>
+  <header>
+    <h1><%= @photo.name %></h1>
+    <hr>
+  </header>
+    <%= image_tag attachment_url(@photo, :image, :fill, 300, 300) %>
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+
+  <%= link_to 'Edit', edit_photo_path(@photo) %> |
+  <%= link_to 'Back', photos_path %>
+</div>

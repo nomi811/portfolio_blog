@@ -23,7 +23,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'aws-sdk', '< 2.0'
 gem 'puma'
 gem 'jquery-turbolinks', '~> 2.1'
-gem 'refile', require: 'refile/rails'
+gem 'refile', require: ['refile/rails', 'refile/image_processing']
 gem 'refile-mini_magick'
 gem 'masonry-rails'
 gem 'lightbox2-rails'
