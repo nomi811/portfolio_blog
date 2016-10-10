@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :photos
+  resources :photos
   get 'about/index'
 
   devise_for :users
