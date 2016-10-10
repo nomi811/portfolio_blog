@@ -137,7 +137,7 @@ hr {
       color: $dark;
       text-decoration: none;
       margin: 20rem 1rem 0 0;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       &:hover {
         color: $highlight;
       }
@@ -236,3 +236,13 @@ input[type="submit"], .button {
 @import 'posts_projects';
 @import 'pygments';
 @import 'font-awesome';
+@import 'photography';
+@import 'pattern_design';
+@import 'lightbox';
+@import 'masonry/basic';
+@import 'masonry/centered';
+@import 'masonry/fluid';
+@import 'masonry/gutters';
+@import 'masonry/infinitescroll';
+@import 'masonry/right-to-left';
+@import 'masonry/transitions';
