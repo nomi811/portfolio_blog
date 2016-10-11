@@ -6,6 +6,7 @@ class PhotosController < ApplicationController
   end
 
   def show
+
   end
 
   def new
@@ -13,49 +14,40 @@ class PhotosController < ApplicationController
   end
 
   def edit
+
   end
 
   def create
-    @photo = Photo.new(photo_params)
+    @photo = Photo.new photo_params
 
-    respond_to do |format|
-      if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
-        format.json { render :show, status: :created, location: @photo }
-      else
-        format.html { render :new }
-        format.json { render json: @photo.errors, status: :unprocessable_entity }
-      end
+    if @photo.save
+      redirect_to @photo, notice: 'Photo was successfully created.'
+    else
+      render :new, notice: 'Unable to save photo.'
     end
   end
 
   def update
-    respond_to do |format|
-      if @photo.update(photo_params)
-        format.html { redirect_to @photo, notice: 'Photo was successfully updated.' }
-        format.json { render :show, status: :ok, location: @photo }
-      else
-        format.html { render :edit }
-        format.json { render json: @photo.errors, status: :unprocessable_entity }
-      end
+    if @photo.update photo_params
+      redirect_to @photo, notice: 'Photo was successfully updated.'
+    else
+      render :edit
     end
   end
 
   def destroy
+    @photo = Photo.find(params[:id])
     @photo.destroy
-    respond_to do |format|
-      format.html { redirect_to photos_url, notice: 'Photo was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to photos_path, notice: 'Photo was successfully destroyed.'
   end
 
   private
 
     def set_photo
-      @photo = Photo.find(params[:id])
+      @photo = Photo.friendly.find(params[:id])
     end
 
     def photo_params
-      params.require(:photo).permit(:name, :image, :remove_image)
+      params.require(:photo).permit(:name, :slug, :image, :remove_image)
     end
 end
