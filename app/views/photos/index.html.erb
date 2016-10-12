@@ -1,5 +1,9 @@
-<div>
-  <% @photos.each do |photo| %>
-    <%= image_tag photo.image.url(:medium) %>
-  <% end %>
-</div>
+<body>
+  <div class="lightbox">
+    <div class="data-lightbox">
+      <% @photos.each do |photo| %>
+        <%= link_to(image_tag(photo.image.url(:medium)), (photo.image.url(:large)), data: { lightbox: "example-set", title: photo.name }) %>
+      <% end %>
+    </div>
+  </div>
+</body>
