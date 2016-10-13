@@ -47,8 +47,7 @@ class PatternsController < ApplicationController
   # DELETE /patterns/1.json
   def destroy
     @pattern.destroy
-      redirect_to patterns_url, notice: 'Pattern was successfully destroyed.'
-    end
+    redirect_to patterns_url, notice: 'Pattern was successfully destroyed.'
   end
 
   private
