@@ -111,6 +111,7 @@ hr {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
   background-image: image-url("flower_background.jpg");
+  background-repeat: no-repeat;
   background-size: 100% auto;
   .logo_rest, .logo_hover {
     font-weight: 700;
@@ -236,7 +237,7 @@ input[type="submit"], .button {
 @import 'posts_projects';
 @import 'pygments';
 @import 'font-awesome';
-@import 'pattern_design';
+@import 'contacts';
 @import 'lightbox';
 @import 'masonry/basic';
 @import 'masonry/centered';

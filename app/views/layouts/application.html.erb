@@ -21,7 +21,7 @@
         <%= link_to 'Projects', projects_path %>
         <%= link_to 'Photography', photos_path %>
         <%= link_to 'Pattern Design', patterns_path %>
-        <%= link_to 'Ping Me', new_contact_path %>
+        <%= link_to 'Ping', new_contact_path %>
         <% if user_signed_in? %>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
         <% end %>
