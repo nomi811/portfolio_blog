@@ -1,4 +1,4 @@
-<%= form_for(@pattern) do |f| %>
+<%= form_for @pattern, html: { multipart: true } do |f| %>
   <% if @pattern.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@pattern.errors.count, "error") %> prohibited this pattern from being saved:</h2>
@@ -15,6 +15,24 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
+  <br>
+  <br>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+
+    <% if @pattern.image_id? %>
+      <%= image_tag @pattern.image.url(:medium) %>
+
+      <%= f.check_box :remove_image %>
+      <%= f.label :remove_image %>
+    <% end %>
+  </div>
+
+  <br>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,9 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
 
-<p>
-  <strong>Name:</strong>
-  <%= @pattern.name %>
-</p>
+  <header>
+    <h1><%= @pattern.name %></h1>
+    <hr>
+  </header>
+    <%= image_tag @pattern.image.url(:medium) %>
 
 <%= link_to 'Edit', edit_pattern_path(@pattern) %> |
 <%= link_to 'Back', patterns_path %>
+<%= link_to 'Delete', pattern_path(@pattern), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
