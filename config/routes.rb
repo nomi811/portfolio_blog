@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :patterns
   resources :photos
   resources :photos
   get 'about/index'
