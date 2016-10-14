@@ -19,6 +19,10 @@ body.lb-disable-scrolling {
   display: none;
 }
 
+.wrapper {
+  min-height: 600px;
+}
+
 .lightbox {
   position: absolute;
   left: 0;
@@ -28,6 +32,15 @@ body.lb-disable-scrolling {
   line-height: 0;
   font-weight: normal;
   padding: 1em;
+  min-height: 100%;
+  height: 600px;
+}
+
+.data-lightbox {
+  padding: 20px;
+  padding-bottom: 50px;
+  height: 600px;
+  overflow: scroll;
 }
 
 .lightbox .lb-image {
