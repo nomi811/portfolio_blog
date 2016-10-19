@@ -36,4 +36,16 @@ feature 'Creating posts' do
     expect(page).to have_content 'Right on, Nomi! Your article was successfully saved!'
   end
 
+  scenario 'can edit a posts' do
+    sign_out
+    sign_in
+    create_post
+    visit '/'
+    click_link 'New Post'
+    click_link 'Edit Article'
+    fill_in 'Title', with: 'Edited Post'
+    click_button 'Update Post'
+    expect(page).to have_content 'Edited Post'
+  end
+
 end
