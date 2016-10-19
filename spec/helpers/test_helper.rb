@@ -23,3 +23,10 @@ def create_post
   fill_in 'Write your article here', with: 'Some content'
   click_button 'Create Post'
 end
+
+def create_project
+  visit '/projects/new'
+  fill_in 'Title', with: 'New Project'
+  fill_in 'Description', with: 'Some content'
+  click_button 'Create Project'
+end

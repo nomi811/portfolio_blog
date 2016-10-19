@@ -1,4 +1,4 @@
-feature 'Creating posts' do
+feature 'Posts' do
   background do
     sign_up
     visit '/posts/new'
@@ -37,8 +37,6 @@ feature 'Creating posts' do
   end
 
   scenario 'can edit a posts' do
-    sign_out
-    sign_in
     create_post
     visit '/'
     click_link 'New Post'
@@ -49,8 +47,6 @@ feature 'Creating posts' do
   end
 
   scenario 'can delete posts' do
-    sign_out
-    sign_in
     create_post
     visit '/'
     click_link 'New Post'
@@ -62,8 +58,6 @@ feature 'Creating posts' do
 
   context 'I can not' do
     it 'create a new post if not signed in' do
-      sign_out
-      sign_in
       sign_out
       visit '/posts/new'
       expect(page).to have_content 'You need to sign in or sign up before continuing.'
