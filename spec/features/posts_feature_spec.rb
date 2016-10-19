@@ -20,9 +20,7 @@ feature 'Creating posts' do
   end
 
   scenario 'does not need an image to create a post' do
-    fill_in 'Title', with: 'Example Post'
-    fill_in 'Write your article here', with: 'some content'
-    click_button 'Create Post'
+    create_post
     expect(page).not_to have_css("img[scr*='missing.png']")
   end
 

@@ -16,3 +16,10 @@ end
 def sign_out
   click_link 'Sign Out'
 end
+
+def create_post
+  visit '/posts/new'
+  fill_in 'Title', with: 'New Post'
+  fill_in 'Write your article here', with: 'Some content'
+  click_button 'Create Post'
+end
