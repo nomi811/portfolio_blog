@@ -13,5 +13,12 @@ feature 'User access' do
       expect(current_path).to eq '/'
       expect(page).to have_content 'Welcome! You have signed up successfully'
     end
+
+    it 'sign in' do
+      sign_up
+      sign_out
+      sign_in
+      expect(page).to have_content 'Signed in successfully'
+    end
   end
 end

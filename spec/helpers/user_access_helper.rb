@@ -12,3 +12,7 @@ def sign_up
   fill_in 'Password confirmation', with: 'password', :match => :prefer_exact
   click_button 'Sign up'
 end
+
+def sign_out
+  click_link 'Sign Out'
+end
