@@ -20,5 +20,13 @@ feature 'User access' do
       sign_in
       expect(page).to have_content 'Signed in successfully'
     end
+
+
+    it 'sign out' do
+      sign_up
+      sign_out
+      expect(page).to have_content 'Signed out successfully'
+      expect(page).not_to have_link 'Sign out'
+    end
   end
 end
