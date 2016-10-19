@@ -48,4 +48,26 @@ feature 'Creating posts' do
     expect(page).to have_content 'Edited Post'
   end
 
+  scenario 'can delete posts' do
+    sign_out
+    sign_in
+    create_post
+    visit '/'
+    click_link 'New Post'
+    click_link 'Delete Article'
+    expect(page).to have_content 'Your post was deleted!'
+    expect(current_path).to eq '/posts'
+    expect(page).not_to have_content 'New Post'
+  end
+
+  context 'I can not' do
+    it 'create a new post if not signed in' do
+      sign_out
+      sign_in
+      sign_out
+      visit '/posts/new'
+      expect(page).to have_content 'You need to sign in or sign up before continuing.'
+    end
+  end
+
 end
