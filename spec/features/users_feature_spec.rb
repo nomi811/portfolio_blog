@@ -29,4 +29,34 @@ feature 'User access' do
       expect(page).not_to have_link 'Sign out'
     end
   end
+
+  context 'I can not' do
+    it 'create a new post if not signed in' do
+      sign_up
+      sign_out
+      visit '/posts/new'
+      expect(page).to have_content 'You need to sign in or sign up before continuing.'
+    end
+
+    it 'add a new project if not signed in' do
+      sign_up
+      sign_out
+      visit '/projects/new'
+      expect(page).to have_content 'You need to sign in or sign up before continuing'
+    end
+
+    it 'add a new photo if not signed in' do
+      sign_up
+      sign_out
+      visit '/photos/new'
+      expect(page).to have_content 'You need to sign in or sign up before continuing'
+    end
+
+    it 'add a new pattern if not signed in' do
+      sign_up
+      sign_out
+      visit '/patterns/new'
+      expect(page).to have_content 'You need to sign in or sign up before continuing'
+    end
+  end
 end
