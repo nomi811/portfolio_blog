@@ -1,4 +1,4 @@
-# portfolio_blog
+# portfolio_blog    [![Build Status](https://travis-ci.org/nomi811/portfolio_blog.svg?branch=master)](https://travis-ci.org/nomi811/portfolio_blog)
 
 # Planning our application
   1.  Answer Questions
