@@ -263,6 +263,7 @@ DEPENDENCIES
   pygments.rb (~> 0.6.0)
   rails (= 4.2.7.1)
   rails_12factor
+  rake (~> 11.1, >= 11.1.2)
   redcarpet (~> 3.2.2)
   rspec-collection_matchers
   rspec-rails

@@ -28,6 +28,7 @@ gem 'lightbox2-rails'
 gem 'social-share-button'
 
 group :development, :test do
+  gem 'rake', '~> 11.1', '>= 11.1.2'
   gem 'byebug'
   gem 'rspec-rails'
   gem 'capybara'
