@@ -3,7 +3,6 @@ feature 'Projects' do
     sign_up
   end
 
-
   context 'I can not' do
     it 'add a new project if not signed in' do
       sign_out

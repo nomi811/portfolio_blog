@@ -1,6 +1,5 @@
-module ApplicationHelper
-
-  class HTMLwithPygments < Redcarpet::Render::HTML
+module ApplicationHelper # :nodoc:
+  class HTMLwithPygments < Redcarpet::Render::HTML # :nodoc:
     def block_code(code, language)
       Pygments.highlight(code, lexer: language)
     end

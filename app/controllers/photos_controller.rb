@@ -1,5 +1,4 @@
-class PhotosController < ApplicationController
-
+class PhotosController < ApplicationController # :nodoc:
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
@@ -8,7 +7,6 @@ class PhotosController < ApplicationController
   end
 
   def show
-
   end
 
   def new
@@ -16,7 +14,6 @@ class PhotosController < ApplicationController
   end
 
   def edit
-
   end
 
   def create
@@ -44,11 +41,11 @@ class PhotosController < ApplicationController
 
   private
 
-    def set_photo
-      @photo = Photo.friendly.find(params[:id])
-    end
+  def set_photo
+    @photo = Photo.friendly.find(params[:id])
+  end
 
-    def photo_params
-      params.require(:photo).permit(:name, :slug, :image, :remove_image)
-    end
+  def photo_params
+    params.require(:photo).permit(:name, :slug, :image, :remove_image)
+  end
 end

@@ -11,7 +11,7 @@ feature 'Posts' do
   end
 
   scenario 'can create a post' do
-    attach_file('Image', "spec/files/images/heron-600px.jpg")
+    attach_file('Image', 'spec/files/images/heron-600px.jpg')
     fill_in 'Title', with: 'Heron'
     fill_in 'Write your article here', with: 'some content'
     click_button 'Create Post'
@@ -63,5 +63,4 @@ feature 'Posts' do
       expect(page).to have_content 'You need to sign in or sign up before continuing.'
     end
   end
-
 end

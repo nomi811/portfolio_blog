@@ -1,5 +1,4 @@
-class ContactsController < ApplicationController
-
+class ContactsController < ApplicationController # :nodoc:
   def new
     @contact = Contact.new
   end

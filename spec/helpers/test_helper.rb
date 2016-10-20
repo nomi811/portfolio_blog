@@ -9,7 +9,7 @@ def sign_up
   visit '/users/sign_up'
   fill_in 'Email', with: 'test@gmail.com'
   fill_in 'Password', with: 'password'
-  fill_in 'Password confirmation', with: 'password', :match => :prefer_exact
+  fill_in 'Password confirmation', with: 'password', match: :prefer_exact
   click_button 'Sign up'
 end
 
@@ -34,13 +34,13 @@ end
 def create_photo
   visit '/photos/new'
   fill_in 'Name', with: 'New Photo'
-  attach_file('Image', "spec/files/images/heron-600px.jpg")
+  attach_file('Image', 'spec/files/images/heron-600px.jpg')
   click_button 'Create Photo'
 end
 
 def create_pattern
   visit '/patterns/new'
   fill_in 'Name', with: 'New Pattern'
-  attach_file('Image', "spec/files/images/Free-Flowing-600px.jpg")
+  attach_file('Image', 'spec/files/images/Free-Flowing-600px.jpg')
   click_button 'Create Pattern'
 end

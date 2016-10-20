@@ -21,7 +21,6 @@ feature 'User access' do
       expect(page).to have_content 'Signed in successfully'
     end
 
-
     it 'sign out' do
       sign_up
       sign_out

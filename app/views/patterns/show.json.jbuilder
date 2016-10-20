@@ -1,1 +1,1 @@
-json.partial! "patterns/pattern", pattern: @pattern
+json.partial! 'patterns/pattern', pattern: @pattern

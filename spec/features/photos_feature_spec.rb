@@ -1,5 +1,4 @@
 feature 'Photos' do
-
   background do
     sign_up
   end

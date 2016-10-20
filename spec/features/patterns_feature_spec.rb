@@ -1,5 +1,4 @@
 feature 'Patterns' do
-
   background do
     sign_up
   end

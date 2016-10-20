@@ -1,5 +1,4 @@
-class ProjectsController < ApplicationController
-
+class ProjectsController < ApplicationController # :nodoc:
   before_action :authenticate_user!, except: [:index, :show]
   before_action :find_project, only: [:show, :edit, :update, :destroy]
 
@@ -22,11 +21,9 @@ class ProjectsController < ApplicationController
   end
 
   def show
-
   end
 
   def edit
-
   end
 
   def update
