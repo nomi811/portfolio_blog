@@ -31,8 +31,7 @@ feature 'Posts' do
   end
 
   scenario 'can view individual posts' do
-    post = create(:post)
-    click_button 'Create Post'
+    create_post
     expect(page).to have_content 'Right on, Nomi! Your article was successfully saved!'
   end
 
