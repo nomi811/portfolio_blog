@@ -35,6 +35,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-collection_matchers'
   gem 'factory_girl_rails'
+  gem 'coveralls', '~> 0.8.15', require: false
 end
 
 group :development do

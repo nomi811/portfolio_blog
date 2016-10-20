@@ -1,3 +1,4 @@
+require 'coveralls'
 require 'rails_helper'
 require 'factory_girl_rails'
 require_relative 'helpers/test_helper'
@@ -19,6 +20,7 @@ require_relative 'helpers/test_helper'
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+Coveralls.wear!('rails')
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
