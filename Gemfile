@@ -25,6 +25,7 @@ gem 'puma'
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'masonry-rails'
 gem 'lightbox2-rails'
+gem 'social-share-button'
 
 group :development, :test do
   gem 'byebug'
