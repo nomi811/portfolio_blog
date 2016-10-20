@@ -17,7 +17,7 @@ class PatternsController < ApplicationController # :nodoc:
   end
 
   def create
-    @pattern = Pattern.new(pattern_params)
+    @pattern = Pattern.new pattern_params
 
     if @pattern.save
       redirect_to @pattern, notice: 'Pattern was successfully created.'
