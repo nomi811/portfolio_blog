@@ -37,3 +37,10 @@ def create_photo
   attach_file('Image', "spec/files/images/heron-600px.jpg")
   click_button 'Create Photo'
 end
+
+def create_pattern
+  visit '/patterns/new'
+  fill_in 'Name', with: 'New Pattern'
+  attach_file('Image', "spec/files/images/Free-Flowing-600px.jpg")
+  click_button 'Create Pattern'
+end
