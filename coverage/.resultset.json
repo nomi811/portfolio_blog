@@ -1,21 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Nomi/Projects/portfolio_blog/app/models/post.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null
-      ],
       "/Users/Nomi/Projects/portfolio_blog/app/controllers/about_controller.rb": [
         0,
         0,
@@ -332,6 +317,21 @@
         0,
         0
       ],
+      "/Users/Nomi/Projects/portfolio_blog/app/models/post.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/Nomi/Projects/portfolio_blog/app/models/project.rb": [
         0,
         0,
@@ -351,6 +351,6 @@
         0
       ]
     },
-    "timestamp": 1477047448
+    "timestamp": 1477048361
   }
 }
