@@ -11,10 +11,10 @@ feature 'Photos' do
     end
   end
 
-  context 'I can' do
-    it 'create a new photo' do
-      create_photo
-      expect(page).to have_content 'New Photo'
-    end
-  end
+  # context 'I can' do
+  #   it 'create a new photo' do
+  #     create_photo
+  #     expect(page).to have_content 'New Photo'
+  #   end
+  # end
 end
