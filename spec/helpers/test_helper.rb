@@ -24,6 +24,13 @@ def create_post
   click_button 'Create Post'
 end
 
+def create_post2
+  visit '/posts/new'
+  fill_in 'Title', with: 'Second Post'
+  fill_in 'Write your article here', with: 'Some content'
+  click_button 'Create Post'
+end
+
 def create_project
   visit '/projects/new'
   fill_in 'Title', with: 'New Project'

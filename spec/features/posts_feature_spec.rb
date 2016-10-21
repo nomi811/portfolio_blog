@@ -2,8 +2,6 @@ feature 'Posts' do
   background do
     sign_up
     visit '/posts/new'
-    post_one = create(:post, title: 'This is post one')
-    post_two = create(:post, title: 'This is the second post')
   end
 
   scenario 'correct page route actions' do
@@ -25,9 +23,11 @@ feature 'Posts' do
   end
 
   scenario 'the index displays correct created posts information' do
+    create_post
+    create_post2
     visit '/posts'
-    expect(page).to have_content('This is post one')
-    expect(page).to have_content('This is the second post')
+    expect(page).to have_content('New Post')
+    expect(page).to have_content('Second Post')
   end
 
   scenario 'can view individual posts' do
