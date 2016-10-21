@@ -17,6 +17,21 @@
         null,
         null
       ],
+      "/Users/Nomi/Projects/portfolio_blog/app/models/pattern.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Nomi/Projects/portfolio_blog/app/models/photo.rb": [
         1,
         1,
@@ -120,19 +135,6 @@
         1,
         1,
         null,
-        null
-      ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/pattern.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
         null
       ],
       "/Users/Nomi/Projects/portfolio_blog/app/controllers/photos_controller.rb": [
@@ -354,6 +356,6 @@
         0
       ]
     },
-    "timestamp": 1477071421
+    "timestamp": 1477074450
   }
 }
