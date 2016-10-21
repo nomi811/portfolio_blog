@@ -41,7 +41,7 @@ end
 def create_photo
   visit '/photos/new'
   fill_in 'Name', with: 'New Photo'
-  attach_file('Image', 'spec/files/images/heron-600px.jpg')
+  attach_file('Image', 'spec/files/images/Free-Flowing-600px.jpg')
   click_button 'Create Photo'
 end
 
