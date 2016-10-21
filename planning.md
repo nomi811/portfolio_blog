@@ -1,19 +1,19 @@
-# Planning our application
+# Planning my application
   1.  Answer Questions
-    - What are we building?
-    - Who are we building it for?
-    - What features do we need to have?
+    - What am I building?
+    - Who am I building it for?
+    - What features do I need to have?
   2.  User Stories
-  3.  Model our Data
-  4.  Think through the pages we need in our app
+  3.  Model my Data
+  4.  Think through the pages I need in my app
 
 ## Questions
 
-  1.  What are we building?  We are building a personal site.  A place where we can blog, share examples of our work, and have people contact us.
+  1.  What am I building?  I am building a personal site.  A place where I can blog, share examples of my work, and have people contact me.
 
-  2.  Who are we building it for?  We are building it for ourselves, but also the community.  Sharing what we are learning by blogging is a great way to learn for ourselves, but we teach others in the process.  Show potential employers that we know what we are doing.
+  2.  Who am I building it for?  I am building it for myself, but also the community.  Sharing what I am learning by blogging is a great way to learn for myself, but I will teach others in the process.  Show potential employers that I know what I am doing.
 
-  3.  What features do we want to have?
+  3.  What features do I want to have?
     - Posts
       - Create / Edit / Destroy
       - Markdown
@@ -30,10 +30,6 @@
     - User (Devise)
 
 ## User Stories
-
-  As a blank
-  I want to be able to blank
-  So that blank
 
   As a User
   I want to be able to create posts
@@ -64,7 +60,7 @@
   So that I can give my opinions on the posts
 
 
-## Modeling our Data
+## Modeling my Data
 
     **Post**
       title:string
@@ -78,7 +74,7 @@
     **User**
 
 
-## Think through the pages we need in our app
+## Think through the pages I need in my app
 
   - Home
   - Posts#index
