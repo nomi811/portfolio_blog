@@ -1,83 +1,68 @@
-.col-1, .col-2, .col-3 {
-  float: left;
-}
-
-.col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
-}
-
-.col-2, .col-3 {
-  width: 27.5%;
-  padding: 0 2.5%
-}
-
-.homepage_content {
+#about {
   padding-bottom: 40px;
-  .card {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .card_about {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .container_about {
-    width: 100%;
-    padding: 10px 20px;
-    height: 500px;
-    overflow: scroll;
-    .image {
-      border: 5px solid $highlight;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      float: right;
-      height: 225px;
-      padding-top: 0;
-    }
-    p {
-      display: inline-block;
-      width: 60%;
-    }
-  }
-  .container {
-    padding: 10px 20px;
-    height: 500px;
-    width: 100%;
+}
 
-  }
-  h2 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-  }
-  h3 {
-    font-size: 1.35em;
-    font-weight: 400;
-    margin-bottom: .5em;
-  }
-  a {
-    text-decoration: none;
-    color: $dark;
-    &:hover {
-      color: $highlight
-    }
-  }
-  .date {
-    font-size: .85em;
-    margin-bottom: 3em;
-    color: $dark;
+#projects {
+  padding-bottom: 40px;
+}
+
+#posts {
+  padding-bottom: 40px;
+}
+.card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+  width: 100%;
+  padding: 15px 20px;
+  height: 500px;
+  overflow: scroll;
+  .image {
+    border: 5px solid $highlight;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: right;
+    height: 225px;
+    padding-top: 0;
   }
   p {
-    margin: 0 0 .75em 0;
+    display: inline-block;
+    width: 60%;
   }
 }
-.about {
-  padding: 0 7.5% 0 0;
-  a {
-    color: $highlight;
-    font-weight: 700;
-    text-decoration: none;
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+  &:hover {
+    color: $highlight
   }
 }
+.date {
+  font-size: .85em;
+  margin-bottom: 3em;
+  color: $dark;
+}
+p {
+  margin: 0 0 .75em 0;
+}
+
+// .about {
+//   padding: 0 7.5% 0 0;
+//   a {
+//     color: $highlight;
+//     font-weight: 700;
+//     text-decoration: none;
+//   }
+// }

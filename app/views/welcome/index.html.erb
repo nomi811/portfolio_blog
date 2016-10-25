@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<div class="wrapper wrapper_padding clearfix">
-  <div class="col-1 about homepage_content">
-    <div class="card_about">
-      <div class="container_about">
+<main class="wrapper wrapper_padding clearfix">
+  <div id="about">
+    <div class="card">
+      <div class="container">
         <h2>About</h2>
         <hr>
         <p>Hi! My name is Nomi.</p>
@@ -15,7 +15,20 @@
     </div>
   </div>
 
-  <div class="col-2 homepage_content">
+  <div id="projects">
+    <div class="card">
+      <div class="container">
+        <h2>Projects</h2>
+        <hr>
+        <% @projects.each do |project| %>
+          <h3><a href="#"><%= link_to project.title, project %></a></h3>
+          <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div id="posts">
     <div class="card">
       <div class="container">
         <h2>Posts</h2>
@@ -28,17 +41,4 @@
       </div>
     </div>
   </div>
-
-  <div class="col-3 homepage_content">
-    <div class="card">
-      <div class="container">
-        <h2>Projects</h2>
-        <hr>
-        <% @projects.each do |project| %>
-          <h3><a href="#"><%= link_to project.title, project %></a></h3>
-          <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+</main>

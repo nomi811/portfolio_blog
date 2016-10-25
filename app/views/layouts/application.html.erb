@@ -18,10 +18,10 @@
       <nav class="bottom-aligner">
         <ul>
           <li><%= link_to '', about_index_path %></li>
-          <li><%= link_to 'Projects', projects_path %></li>
-          <li><%= link_to 'Blog', posts_path %></li>
-          <li><%= link_to 'Images', photos_path %></li>
-          <li><%= link_to 'Pattern Design', patterns_path %></li>
+          <li><%= link_to 'Projects', '#projects' %></li>
+          <li><%= link_to 'Blog', '#posts' %></li>
+          <li><%= link_to 'Images', '#photos' %></li>
+          <li><%= link_to 'Pattern Design', '#patterns' %></li>
           <li><%= link_to 'Contact', new_contact_path %></li>
           <% if user_signed_in? %>
             <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
