@@ -16,15 +16,17 @@
       <%= link_to (image_tag "NV-logo.png", class: 'logo_rest'), root_path %>
       <%= link_to (image_tag "NV_logo_hover.png", class: 'logo_hover'), root_path %>
       <nav class="bottom-aligner">
-        <%= link_to 'Profile', about_index_path %>
-        <%= link_to 'Posts', posts_path %>
-        <%= link_to 'Projects', projects_path %>
-        <%= link_to 'Photography', photos_path %>
-        <%= link_to 'Pattern Design', patterns_path %>
-        <%= link_to 'Ping', new_contact_path %>
-        <% if user_signed_in? %>
-          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-        <% end %>
+        <ul>
+          <li><%= link_to '', about_index_path %></li>
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to 'Blog', posts_path %></li>
+          <li><%= link_to 'Images', photos_path %></li>
+          <li><%= link_to 'Pattern Design', patterns_path %></li>
+          <li><%= link_to 'Contact', new_contact_path %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <% end %>
+        </ul>
       </nav>
     </header>
 

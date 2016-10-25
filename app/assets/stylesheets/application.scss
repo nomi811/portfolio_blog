@@ -10,15 +10,15 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+html, body, ul, li {
+  padding: 0;
   margin: 0;
 }
 
-#holder {
-  min-height: 100%;
-  position: relative;
-}
+// #holder {
+//   min-height: 100%;
+//   position: relative;
+// }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -26,11 +26,9 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
-  position: relative;
-  min-height: 100%;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 .skinny_wrapper {
@@ -47,7 +45,7 @@ body {
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  display: table;
+  display: block;
 }
 
 .clearfix:after {
@@ -111,46 +109,79 @@ hr {
 }
 
 #main_navigation {
-  padding: 2.5em 5%;
-  border-bottom: 1px solid $border;
+  padding: 1em 2% 1em 2%;
   background-image: image-url("flower_background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  .logo_rest, .logo_hover {
-    font-weight: 700;
-    font-size: .8em;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border: 2px solid $border;
-    padding: 1rem;
-    text-decoration: none;
-    color: $dark;
-    float: left;
+  border-bottom: 1px solid $border;
+}
+
+#main_navigation .logo_rest, .logo_hover {
+  // background-image: url(linen_texture);
+  // background: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  padding: 1rem;
+  text-decoration: none;
+  color: $dark;
+  float: left;
+}
+
+#main_navigation .logo_hover, .logo_hover:hover {
+  display: none;
+  border-color: $highlight;
+}
+
+#main_navigation nav {
+  float: right;
+  // margin: 4.5rem 0 0 0;
+  // padding: 1.3rem;
+  // background: rgba(255, 255, 255, 0.3);
+  border: 1px solid $border;
+}
+
+#main_navigation nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#main_navigation nav li {
+  list-style-type: none;
+  float: left;
+  margin-left: 20px;
+}
+
+#main_navigation nav a {
+  text-transform: uppercase;
+  font-weight: 700em;
+  color: $dark;
+  text-decoration: none;
+  margin: 20rem 1rem 0 0;
+  font-size: 1rem;
+  &:hover {
+    color: $highlight;
   }
-  .logo_hover, .logo_hover:hover {
-    display: none;
-    border-color: $highlight;
-  }
-  nav {
-    float: right;
-    margin: 4.5rem 0 0 0;
-    padding: 1.3rem;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid $border;
-    a {
-      color: $dark;
-      text-decoration: none;
-      margin: 20rem 1rem 0 0;
-      font-size: 1.1rem;
-      &:hover {
-        color: $highlight;
-      }
-    }
-    .bottom-aligner {
-      display: inline-block;
-      margin: 0;
-    }
-  }
+}
+#main_navigation .bottom-aligner {
+  display: inline-block;
+  margin: 112px 0 0 0;
+  // background-image: url(linen_texture);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+#main-banner {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+#main-banner img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 #page_title {
