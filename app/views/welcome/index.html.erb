@@ -18,12 +18,16 @@
   <div id="projects">
     <div class="card">
       <div class="container">
-        <h2>Projects</h2>
+        <h2><%= link_to 'Recent Projects', projects_path %></h2>
         <hr>
-        <% @projects.each do |project| %>
-          <h3><a href="#"><%= link_to project.title, project %></a></h3>
-          <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-        <% end %>
+        <ul>
+          <% @projects.each do |project| %>
+          <li>
+            <h3><a href="#"><%= link_to project.title, project %></a></h3>
+            <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+          <li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
@@ -31,13 +35,19 @@
   <div id="posts">
     <div class="card">
       <div class="container">
-        <h2>Posts</h2>
+        <h2><%= link_to 'Recent Posts', posts_path %></h2>
         <hr>
-
-        <% @posts.each do |post| %>
-          <h3><a href="#"><%= link_to post.title, post %></a></h3>
-          <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-        <% end %>
+        <ul>
+          <% @posts.each do |post| %>
+            <li>
+              <% if post.image_file_name != nil %>
+                <%= image_tag post.image.url(:medium) %>
+              <% end %>
+              <h3><a href="#"><%= link_to post.title, post %></a></h3>
+              <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
