@@ -23,6 +23,9 @@
         <ul>
           <% @projects.each do |project| %>
           <li>
+            <% if project.image_file_name != nil %>
+              <%= image_tag project.image.url(:medium) %>
+            <% end %>
             <h3><a href="#"><%= link_to project.title, project %></a></h3>
             <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
           <li>
