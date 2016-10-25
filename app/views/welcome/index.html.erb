@@ -54,4 +54,38 @@
       </div>
     </div>
   </div>
+
+  <div id="photos">
+    <div class="card">
+      <div class="container">
+        <h2><%= link_to 'Featured Images', photos_path %></h2>
+        <hr>
+        <ul>
+          <% @photos.each do |photo| %>
+          <li>
+            <%= image_tag photo.image.url(:medium) %>
+            <h3><%= photo.name %></h3>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="patterns">
+    <div class="card">
+      <div class="container">
+        <h2><%= link_to 'Featured Pattern Designs', patterns_path %></h2>
+        <hr>
+        <ul>
+          <% @patterns.each do |pattern| %>
+          <li>
+            <%= image_tag pattern.image.url(:medium) %>
+            <h3><%= pattern.name %></h3>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 </main>

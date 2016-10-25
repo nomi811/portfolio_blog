@@ -28,7 +28,31 @@
   }
 }
 
+#photos {
+  padding-bottom: 40px;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 5.2%;
+  }
+}
 
+#patterns {
+  padding-bottom: 40px;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 5.2%;
+  }
+}
 
 .card {
   width: 100%;

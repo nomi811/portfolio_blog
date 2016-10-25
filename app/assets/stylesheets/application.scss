@@ -172,18 +172,6 @@ hr {
   background: rgba(255, 255, 255, 0.3);
 }
 
-
-#main-banner {
-  max-height: 500px;
-  overflow: hidden;
-}
-
-#main-banner img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
 #page_title {
   text-align: center;
   border-bottom: 1px solid $border;
