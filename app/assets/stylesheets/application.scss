@@ -213,8 +213,55 @@ input[type="submit"], .button {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
 
+  #main_navigation .logo_rest, .logo_hover {
+    float: none;
+    margin: 0 40% -97px;
+    background-image: url(linen_texture);
+  }
+
+  #main_navigation nav {
+    float: none;
+  }
+
+  #main_navigation .bottom-aligner {
+    margin: 112px 3% 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #main_navigation {
+    background-size: auto;
+  }
+
+  #main_navigation .logo_rest, .logo_hover {
+    float: none;
+    margin: 0 33% -97px;
+    background-image: url(linen_texture);
+  }
+
+  #main_navigation nav {
+    float: none;
+  }
+
+  #main_navigation nav li {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  #main_navigation nav li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid $dark;
+  }
+
+  #main_navigation .bottom-aligner {
+    margin: 112px 3% 0;
+  }
 }
 
 @import 'welcome';

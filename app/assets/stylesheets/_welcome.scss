@@ -125,28 +125,49 @@ p {
   .wrapper {
     max-width: 1000px;
   }
-  #photos li {
-    width: 46%;
-    margin: 0 2%;
-    padding: 0 11%;
+
+  #projects {
+    li {
+      margin: 0 4.6%;
+      padding: 0 9.1%;
+      width: 40%;
+    }
+    h3 {
+      margin: 0;
+    }
   }
 
-  #patterns li {
-    margin: 0 1%;
-    width: 48%;
-    padding: 0 12.5%;
+  #posts {
+    li {
+      width: 42%;
+      padding: 0 9.5%;
+      margin: 0 2%;
+    }
+    h3 {
+      margin: 0;
+    }
   }
 
-  #posts li {
-    width: 42%;
-    padding: 0 9.5%;
-    margin: 0 2%;
+  #photos {
+    li {
+      width: 46%;
+      margin: 0 2%;
+      padding: 0 11%;
+    }
+    h3 {
+      margin: 0 0 1em;
+    }
   }
 
-  #projects li {
-    margin: 0 4.6%;
-    padding: 0 9.5%;
-    width: 40%;
+  #patterns {
+    li {
+      margin: 0 1%;
+      width: 48%;
+      padding: 0 12.5%;
+    }
+    h3 {
+      margin: 0 0 1em;
+    }
   }
 }
 
@@ -157,13 +178,19 @@ p {
     margin: 0;
     }
     p {
-      width: 80%;
+      width: 79%;
     }
   }
 
-  #patterns li {
+  #projects li {
+    margin: 0;
+    padding: 0 12.5%;
     width: 50%;
-    padding: 0 13%;
+  }
+
+  #posts li {
+    width: 50%;
+    padding: 0 8.2%;
     margin: 20px 0;
   }
 
@@ -173,9 +200,83 @@ p {
     margin: 20px 0;
   }
 
-  #posts li {
+  #patterns li {
     width: 50%;
-    padding: 0 8.2%;
+    padding: 0 13%;
     margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    .image {
+    height: 146px;
+    margin: 0;
+    }
+    p {
+      width: 65%;
+    }
+  }
+
+  #projects li {
+    margin: 0;
+    padding: 0 8.5%;
+    width: 48%;
+  }
+
+  #posts li {
+    width: 49%;
+    padding: 0 4.2%;
+    margin: 0;
+  }
+
+  #photos li {
+    width: 49%;
+    padding: 0 8%;
+    margin: 0;
+  }
+
+  #patterns li {
+    width: 49%;
+    padding: 0 9.5%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .container {
+    .image {
+    height: 146px;
+    margin: 0;
+    }
+    p {
+      width: 65%;
+    }
+  }
+
+  #projects li {
+    margin: 0;
+    padding: 0 8.5%;
+    width: 48%;
+  }
+
+  #posts li {
+    width: 49%;
+    padding: 0 4.2%;
+    margin: 0;
+  }
+
+  #photos li {
+    width: 49%;
+    padding: 0 8%;
+    margin: 0;
+  }
+
+  #patterns li {
+    width: 49%;
+    padding: 0 9.5%;
+    margin: 0;
   }
 }
