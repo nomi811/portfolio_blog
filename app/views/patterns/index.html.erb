@@ -3,12 +3,8 @@
 <h1 id="page_title">Pattern Design</h1>
 <div id="gallery">
   <div class="wrapper clearfix">
-    <div class="lightbox">
-      <div class="data-lightbox">
-        <% @patterns.each do |pattern| %>
-            <%= link_to(image_tag(pattern.image.url(:medium)), (pattern.image.url(:large)), class: 'pattern', data: { lightbox: "pattern", title: pattern.name }) %>
-        <% end %>
-      </div>
-    </div>
+    <% @patterns.each do |pattern| %>
+        <%= link_to(image_tag(pattern.image.url(:medium)), (pattern.image.url(:large)), data: { lightbox: "example-set", title: pattern.name, rel: 'lightbox' }) %>
+    <% end %>
   </div>
 </div>

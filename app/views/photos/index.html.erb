@@ -3,12 +3,8 @@
 <h1 id="page_title">Photography</h1>
 <div id="gallery">
   <div class="wrapper clearfix">
-    <div class="lightbox">
-      <div class="data-lightbox">
-        <% @photos.each do |photo| %>
-          <%= link_to(image_tag(photo.image.url(:medium)), (photo.image.url(:large)), data: { lightbox: "example-set", title: photo.name }) %>
-        <% end %>
-      </div>
-    </div>
+    <% @photos.each do |photo| %>
+      <%= link_to(image_tag(photo.image.url(:medium)), (photo.image.url(:large)), data: { lightbox: "example-set", title: photo.name, rel: 'lightbox' }) %>
+    <% end %>
   </div>
 </div>
