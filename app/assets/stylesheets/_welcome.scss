@@ -11,7 +11,7 @@
   li {
     list-style-type: none;
     float: left;
-    margin: 0 3.9%;
+    margin: 0 3.6%;
   }
   img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -27,7 +27,7 @@
   li {
     list-style-type: none;
     float: left;
-    margin: 0 3.9%;
+    padding: 0 .4%;
   }
   img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -43,7 +43,8 @@
   li {
     list-style-type: none;
     float: left;
-    margin: 0 5.2%;
+    margin: 0 2%;
+    padding: .2%;
   }
   img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -59,7 +60,7 @@
   li {
     list-style-type: none;
     float: left;
-    margin: 0 5.2%;
+    margin: 0 3.2%;
   }
   img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -88,7 +89,7 @@
   }
   p {
     display: inline-block;
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -115,4 +116,66 @@ a {
 }
 p {
   margin: 0 0 .75em 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1380px) {
+
+  .wrapper {
+    max-width: 1000px;
+  }
+  #photos li {
+    width: 46%;
+    margin: 0 2%;
+    padding: 0 11%;
+  }
+
+  #patterns li {
+    margin: 0 1%;
+    width: 48%;
+    padding: 0 12.5%;
+  }
+
+  #posts li {
+    width: 42%;
+    padding: 0 9.5%;
+    margin: 0 2%;
+  }
+
+  #projects li {
+    margin: 0 4.6%;
+    padding: 0 9.5%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    .image {
+    height: 146px;
+    margin: 0;
+    }
+    p {
+      width: 80%;
+    }
+  }
+
+  #patterns li {
+    width: 50%;
+    padding: 0 13%;
+    margin: 20px 0;
+  }
+
+  #photos li {
+    width: 50%;
+    padding: 0 12%;
+    margin: 20px 0;
+  }
+
+  #posts li {
+    width: 50%;
+    padding: 0 8.2%;
+    margin: 20px 0;
+  }
 }

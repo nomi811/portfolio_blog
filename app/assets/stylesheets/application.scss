@@ -22,6 +22,7 @@ body {
 
 .wrapper {
   width: 96%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 2%;
 }
@@ -210,9 +211,14 @@ input[type="submit"], .button {
   text-align: center;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+
+}
+
 @import 'welcome';
 @import '_photos_patterns';
-@import 'about';
 @import 'posts_projects';
 @import 'pygments';
 @import 'font-awesome';
