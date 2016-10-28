@@ -1,7 +1,4 @@
 class Photo < ActiveRecord::Base # :nodoc:
-  require 'aws-sdk-v1'
-  require 'aws-sdk'
-  
   extend FriendlyId
   friendly_id :name, use: :slugged
 
