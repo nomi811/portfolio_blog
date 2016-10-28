@@ -7,8 +7,9 @@
     <hr>
   </header>
     <%= image_tag @pattern.image.url(:medium) %>
-
-<%= link_to 'Edit', edit_pattern_path(@pattern) %> |
-<%= link_to 'Back', patterns_path %>
-<%= link_to 'Delete', pattern_path(@pattern), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div id='admin_links'>
+    <%= link_to 'Edit', edit_pattern_path(@pattern) %> |
+    <%= link_to 'Back', patterns_path %>
+    <%= link_to 'Delete', pattern_path(@pattern), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
 </div>

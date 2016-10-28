@@ -3,13 +3,14 @@
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
 
   <header>
-    <h1><%= @photo.name %></h1>
-    <hr>
-  </header>
     <%= image_tag @photo.image.url(:medium) %>
+    <h1><%= @photo.name %></h1>
+  </header>
 
 
-  <%= link_to 'Edit', edit_photo_path(@photo) %> |
-  <%= link_to 'Back', photos_path %> |
-  <%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div id='admin_links'>
+    <%= link_to 'Edit', edit_photo_path(@photo) %> |
+    <%= link_to 'Back', photos_path %> |
+    <%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
 </div>
