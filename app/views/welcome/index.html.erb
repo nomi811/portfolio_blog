@@ -76,14 +76,13 @@
       <div class="container">
         <h2><%= link_to 'Featured Pattern Designs', patterns_path %></h2>
         <hr>
-        <ul>
-          <% @patterns.each do |pattern| %>
-          <li>
-            <%= image_tag pattern.image.url(:medium) %>
-            <h3><%= pattern.name %></h3>
-          </li>
-          <% end %>
-        </ul>
+        <div id="gallery">
+          <div class="wrapper clearfix">
+            <% @patterns.each do |pattern| %>
+              <%= link_to(image_tag(pattern.image.url(:medium)), (pattern.image.url(:large)), data: { lightbox: "example-set", title: pattern.name, rel: 'lightbox' }) %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
