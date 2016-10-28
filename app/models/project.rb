@@ -1,4 +1,7 @@
 class Project < ActiveRecord::Base # :nodoc:
+  require 'aws-sdk-v1'
+  require 'aws-sdk'
+  
   extend FriendlyId
   friendly_id :title, use: :slugged
   validates_presence_of :title, :description
