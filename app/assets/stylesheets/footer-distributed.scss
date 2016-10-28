@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	padding: 45px 50px;
+	padding: 30px 30px 30px;
 	margin-top: 80px;
 }
 
@@ -13,14 +13,20 @@
 	color:  $dark;
 	font-size: .9em;
 	margin: 0;
+  p {
+    margin: 46px 0 .75em 0;
+    padding-top: 1em;
+  }
   .copyright {
-    float: left;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid $light;
   }
 }
 
 .tech {
   z-index: -1;
-  text-align: center;
+  float: left;
   font-size: .9em;
   margin: 0;
   padding: 0;
@@ -45,8 +51,9 @@
 
 .footer-distributed .footer-right{
 	float: right;
-	margin-top: 6px;
+	margin: 0;
 	max-width: 180px;
+  padding: 0 0 4px;
 }
 
 .footer-distributed .footer-right a{
@@ -66,7 +73,29 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+  .footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+    float: none;
+    max-width: none;
+	}
+}
+
+@media screen and (max-width: 975px) {
+
+  .footer-distributed .tech {
+    float: none;
+    text-align: center;
+    padding: 15px 0 0;
+  }
+
+  .footer-distributed .footer-left p {
+    margin: 27px 0 .75em 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
@@ -81,4 +110,23 @@
 	.footer-distributed .footer-left p.footer-links{
 		line-height: 1.8;
 	}
+}
+
+@media screen and (max-width: 480px) {
+
+  .footer-distributed {
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .footer-distributed .footer-left .copyright,
+  .footer-distributed .footer-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-left .copyright {
+    padding-top: 1.5em;
+  }
 }

@@ -217,6 +217,9 @@ p {
     p {
       width: 65%;
     }
+    h2 {
+      text-align: center;
+    }
   }
 
   #projects li {
@@ -244,7 +247,7 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 710px) {
 
   .container {
     .image {
@@ -254,29 +257,28 @@ p {
     p {
       width: 65%;
     }
+    h2 {
+      text-align: center
+    }
   }
 
   #projects li {
-    margin: 0;
-    padding: 0 8.5%;
-    width: 48%;
+    width: 100%;
+    text-align: center;
   }
 
   #posts li {
-    width: 49%;
-    padding: 0 4.2%;
-    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
   #photos li {
-    width: 49%;
-    padding: 0 8%;
-    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
   #patterns li {
-    width: 49%;
-    padding: 0 9.5%;
-    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 }
