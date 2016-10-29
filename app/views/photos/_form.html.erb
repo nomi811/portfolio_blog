@@ -12,15 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-
-  <br>
-  <br>
-
-  <div class="field">
-    <%= f.label :image %>
+    <%= f.label :image %><br>
     <%= f.file_field :image %>
 
     <% if @photo.image_id? %>
@@ -29,6 +21,13 @@
       <%= f.check_box :remove_image %>
       <%= f.label :remove_image %>
     <% end %>
+  </div>
+
+  <br>
+  
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </div>
 
   <br>
