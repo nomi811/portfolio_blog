@@ -9,5 +9,5 @@ class Pattern < ActiveRecord::Base # :nodoc:
                             default_url: '/images/:style/missing.png'
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
   validates_presence_of :name
-  validates :image_id, uniqueness: true
+  validates :image_file_name, uniqueness: true
 end

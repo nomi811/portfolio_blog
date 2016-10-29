@@ -3,7 +3,7 @@ class PatternsController < ApplicationController # :nodoc:
   before_action :set_pattern, only: [:show, :edit, :update, :destroy]
 
   def index
-    @patterns = Pattern.all
+    @patterns = Pattern.all.order('created_at desc')
   end
 
   def show
