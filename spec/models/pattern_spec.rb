@@ -15,7 +15,7 @@ describe Pattern do
   end
 
   context 'Uniqueness' do
-    it 'can not create a duplicate photo' do
+    it 'can not create a duplicate pattern' do
       create(:pattern)
       create(:pattern)
       expect(subject).to have(1).error_on(:image)
