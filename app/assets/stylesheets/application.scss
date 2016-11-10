@@ -129,24 +129,24 @@ hr {
   border-color: $highlight;
 }
 
-nav {
+#menu nav {
   // float: right;
   text-align: center;
   border: 1px solid $border;
 }
 
-nav ul {
+#menu nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav li {
+#menu nav li {
   list-style-type: none;
   float: left;
   margin-left: 20px;
 }
 
-nav a {
+#menu nav a {
   text-transform: uppercase;
   font-weight: 700em;
   color: $dark;
