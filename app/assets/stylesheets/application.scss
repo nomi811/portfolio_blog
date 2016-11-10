@@ -129,23 +129,24 @@ hr {
   border-color: $highlight;
 }
 
-#main_navigation nav {
-  float: right;
+nav {
+  // float: right;
+  text-align: center;
   border: 1px solid $border;
 }
 
-#main_navigation nav ul {
+nav ul {
   margin: 0;
   padding: 0;
 }
 
-#main_navigation nav li {
+nav li {
   list-style-type: none;
   float: left;
   margin-left: 20px;
 }
 
-#main_navigation nav a {
+nav a {
   text-transform: uppercase;
   font-weight: 700em;
   color: $dark;
@@ -156,7 +157,7 @@ hr {
     color: $highlight;
   }
 }
-#main_navigation .bottom-aligner {
+.bottom-aligner {
   display: inline-block;
   margin: 112px 0 0 0;
   background: rgba(255, 255, 255, 0.3);
@@ -221,12 +222,12 @@ input[type="submit"], .button {
     // background-image: url(linen_texture);
   }
 
-  #main_navigation nav {
+  nav {
     float: none;
     border: none;
   }
 
-  #main_navigation .bottom-aligner {
+  .bottom-aligner {
     margin: 112px 3% 0;
   }
 }
@@ -251,13 +252,13 @@ input[type="submit"], .button {
     width: 25%;
   }
 
-  #main_navigation nav li {
+  nav li {
     float: none;
     width: 100%;
     margin: 0;
   }
 
-  #main_navigation nav li a {
+  nav li a {
     display: block;
     margin: 0;
     width: 100%;
@@ -267,7 +268,7 @@ input[type="submit"], .button {
     font-size: 11px;
   }
 
-  #main_navigation .bottom-aligner {
+  .bottom-aligner {
     margin: 0;
     width: 100%;
   }
@@ -280,12 +281,12 @@ input[type="submit"], .button {
     cursor: pointer;
   }
 
-  #main_navigation nav ul {
+  nav ul {
     height: 0;
     overflow: hidden;
   }
 
-  #main_navigation nav.bottom-aligner ul.open {
+  nav.bottom-aligner ul.open {
     height: auto;
     width: 100%;
     padding: 40px 0 0;

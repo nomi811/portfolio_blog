@@ -1,102 +1,13 @@
 <!DOCTYPE html>
 
 <main class="wrapper wrapper_padding clearfix">
-  <%= image_tag("me_sqr", alt: "A lovely picture of myself", class: 'image') %>
-  <%= image_tag("mealplanner_sqr", alt: "Meal Planner Project", class: 'image') %>
+  <%= link_to (image_tag("me_sqr", alt: "A lovely picture of myself", class: 'image')), about_index_path %>
   <%= image_tag("resume_sqr", alt: "resume", class: 'image') %>
+  <%= link_to (image_tag("mealplanner_sqr", alt: "Meal Planner Project", class: 'image')), projects_path %>
   <%= image_tag("CV", alt: "CV", class: 'image') %>
-  <%= image_tag("3_birds_sqr", alt: "3 Birds", class: 'image') %>
-  <%= image_tag("hydrangea_sqr", alt: "Hydrangea", class: 'image') %>  
-  <%= image_tag("berries_sqr", alt: "Red Berries", class: 'image') %>
+  <%= image_tag("3_birds_sqr", alt: "3 Birds", class: 'filler_image') %>
+  <%= link_to (image_tag("hydrangea_sqr", alt: "Hydrangea", class: 'image')), posts_path %>
+  <%= link_to (image_tag("berries_sqr", alt: "Red Berries", class: 'image')), photos_path %>
   <%= image_tag("alex_sqr", alt: "Alex", class: 'image') %>
-  <%= image_tag("quote_sqr2", alt: "quote", class: 'image') %>
-
-
-
-  <div id="about">
-    <div class="card">
-      <div class="container">
-        <h2>About</h2>
-        <hr>
-        <p>Hi! My name is Nomi. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    Check out my CV! &nbsp; &nbsp;
-        <a href="https://github.com/nomi811/CV" target="_blank"><i class="fa fa-file-o" aria-hidden="true"></i></a></p>
-        <%= image_tag("me-circle", alt: "A lovely picture of myself", class: 'image') %>
-        <p>I'm a Junior Web Developer and a dabbler of all things creative. God's creation inspires and feeds my soul.</p>
-        <p>When I was a kid, my brother told me I wasn't a book worm, I was a book slug. This still holds true. I always have several books going at a time and feel lost if I don't have one handy. </p>
-        <p>My most fervent wish is that I had a photographic memory.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="projects">
-    <div class="card">
-      <div class="container">
-        <h2><%= link_to 'Recent Projects', projects_path %></h2>
-        <hr>
-        <ul>
-          <% @projects.each do |project| %>
-          <li>
-            <% if project.image_file_name != nil %>
-              <%= image_tag project.image.url(:medium) %>
-            <% end %>
-            <h3><a href="#"><%= link_to project.title, project %></a></h3>
-            <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-          <li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="posts">
-    <div class="card">
-      <div class="container">
-        <h2><%= link_to 'Recent Posts', posts_path %></h2>
-        <hr>
-        <ul>
-          <% @posts.each do |post| %>
-            <li>
-              <% if post.image_file_name != nil %>
-                <%= image_tag post.image.url(:medium) %>
-              <% end %>
-              <h3><a href="#"><%= link_to post.title, post %></a></h3>
-              <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="photos">
-    <div class="card">
-      <div class="container">
-        <h2><%= link_to 'Featured Images', photos_path %></h2>
-        <hr>
-        <div id="gallery">
-          <div class="wrapper clearfix">
-            <% @photos.each do |photo| %>
-              <%= link_to(image_tag(photo.image.url(:medium)), (photo.image.url(:large)), data: { lightbox: "example-set", title: photo.name, rel: 'lightbox' }) %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="patterns">
-    <div class="card">
-      <div class="container">
-        <h2><%= link_to 'Featured Pattern Designs', patterns_path %></h2>
-        <hr>
-        <div id="gallery">
-          <div class="wrapper clearfix">
-            <% @patterns.each do |pattern| %>
-              <%= link_to(image_tag(pattern.image.url(:medium)), (pattern.image.url(:large)), data: { lightbox: "example-set", title: pattern.name, rel: 'lightbox' }) %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= link_to (image_tag("quote_sqr2", alt: "quote", class: 'image')), patterns_path %>
 </main>
