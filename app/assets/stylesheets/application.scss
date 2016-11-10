@@ -281,12 +281,12 @@ input[type="submit"], .button {
     cursor: pointer;
   }
 
-  nav ul {
+  #menu nav ul {
     height: 0;
     overflow: hidden;
   }
 
-  nav.bottom-aligner ul.open {
+  #menu nav ul.open {
     height: auto;
     width: 100%;
     padding: 40px 0 0;
