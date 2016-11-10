@@ -222,12 +222,12 @@ input[type="submit"], .button {
     // background-image: url(linen_texture);
   }
 
-  nav {
+  #menu nav {
     float: none;
     border: none;
   }
 
-  .bottom-aligner {
+  #menu .bottom-aligner {
     margin: 112px 3% 0;
   }
 }
@@ -252,13 +252,13 @@ input[type="submit"], .button {
     width: 25%;
   }
 
-  nav li {
+  #menu nav li {
     float: none;
     width: 100%;
     margin: 0;
   }
 
-  nav li a {
+  #menu nav li a {
     display: block;
     margin: 0;
     width: 100%;
@@ -268,7 +268,7 @@ input[type="submit"], .button {
     font-size: 11px;
   }
 
-  .bottom-aligner {
+  #menu .bottom-aligner {
     margin: 0;
     width: 100%;
   }
