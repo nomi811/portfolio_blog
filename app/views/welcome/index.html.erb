@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
 <main class="wrapper wrapper_padding clearfix">
-  <%= link_to (image_tag("me_sqr", alt: "A lovely picture of myself", class: 'image')), about_index_path %>
-  <%= image_tag("resume_sqr", alt: "resume", class: 'image') %>
-  <%= link_to (image_tag("mealplanner_sqr", alt: "Meal Planner Project", class: 'image')), projects_path %>
-  <%= image_tag("CV", alt: "CV", class: 'image') %>
-  <%= image_tag("3_birds_sqr", alt: "3 Birds", class: 'filler_image') %>
-  <%= link_to (image_tag("hydrangea_sqr", alt: "Hydrangea", class: 'image')), posts_path %>
-  <%= link_to (image_tag("berries_sqr", alt: "Red Berries", class: 'image')), photos_path %>
-  <%= image_tag("alex_sqr", alt: "Alex", class: 'image') %>
-  <%= link_to (image_tag("quote_sqr2", alt: "quote", class: 'image')), patterns_path %>
+  <div id="squares">
+    <ul>
+      <li><%= link_to (image_tag("me_sqr", alt: "A lovely picture of myself", class: 'image')), about_index_path %></li>
+      <li><%= image_tag("resume_sqr", alt: "resume", class: 'image') %></li>
+      <li><%= link_to (image_tag("mealplanner_sqr", alt: "Meal Planner Project", class: 'image')), projects_path %></li>
+      <li><%= image_tag("CV", alt: "CV", class: 'image') %></li>
+      <li><%= image_tag("3_birds_sqr", alt: "3 Birds", class: 'filler_image') %></li>
+      <li><%= link_to (image_tag("hydrangea_sqr", alt: "Hydrangea", class: 'image')), posts_path %></li>
+      <li><%= link_to (image_tag("berries_sqr", alt: "Red Berries", class: 'image')), photos_path %></li>
+      <li><%= image_tag("alex_sqr", alt: "Alex", class: 'image') %></li>
+      <li><%= link_to (image_tag("quote_sqr2", alt: "quote", class: 'image')), patterns_path %></li>
+  </div>
 </main>

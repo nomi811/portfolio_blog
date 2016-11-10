@@ -130,9 +130,9 @@ hr {
 }
 
 #menu nav {
-  float: right;
-  text-align: center;
+  // float: right;
   // border: 1px solid $border;
+  width: auto;
 }
 
 #menu nav ul {
@@ -157,6 +157,41 @@ hr {
     color: $highlight;
   }
 }
+
+#squares {
+  // float: right;
+  // border: 1px solid $border;
+  width: auto;
+  height: auto;
+}
+
+#squares ul {
+  margin: 0;
+  padding: 0;
+}
+
+#squares li {
+  height: auto;
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  font-size: 0;
+  line-height: 1.75;
+  // margin-left: 20px;
+}
+
+// #squares a {
+//   text-transform: uppercase;
+//   font-weight: 700em;
+//   color: $dark;
+//   text-decoration: none;
+//   // margin: 20rem 1rem 0 0;
+//   margin: 0;
+//   font-size: 1rem;
+//   &:hover {
+//     color: $highlight;
+//   }
+// }
 .bottom-aligner {
   display: inline-block;
   margin: 112px 0 0 0;
@@ -287,6 +322,12 @@ input[type="submit"], .button {
   }
 
   #menu nav ul.open {
+    position: relative;
+    clear: left;
+    left: 0;
+    right: 0;
+    left: 0;
+    top: 0;
     height: auto;
     width: 100%;
     padding: 40px 0 0;
