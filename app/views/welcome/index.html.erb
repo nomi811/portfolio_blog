@@ -75,9 +75,9 @@
         <hr>
         <div id="gallery">
           <div class="wrapper clearfix">
-            <% @photos.each do |photo| %>
-              <%= link_to(image_tag(photo.image.url(:medium)), (photo.image.url(:large)), data: { lightbox: "example-set", title: photo.name, rel: 'lightbox' }) %>
-            <% end %>
+            <%= image_tag('alex_sqr', alt: 'Alex') %>
+            <%= image_tag('berries_sqr', alt: 'Red Berries') %>
+            <%= image_tag('hydrangea_sqr', alt: 'Hydrangea') %>
           </div>
         </div>
       </div>
@@ -91,9 +91,8 @@
         <hr>
         <div id="gallery">
           <div class="wrapper clearfix">
-            <% @patterns.each do |pattern| %>
-              <%= link_to(image_tag(pattern.image.url(:medium)), (pattern.image.url(:large)), data: { lightbox: "example-set", title: pattern.name, rel: 'lightbox' }) %>
-            <% end %>
+            <%= image_tag('quote_sqr2', alt: 'quote') %>
+            <%= image_tag('3_birds_sqr', alt: '3 Birds') %>
           </div>
         </div>
       </div>
