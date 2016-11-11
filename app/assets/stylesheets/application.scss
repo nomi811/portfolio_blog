@@ -132,23 +132,25 @@ hr {
 #menu {
   padding-bottom: 2em;
   border-bottom: 1px solid $border;
+
 }
 
-#menu nav {
+#menu nav .navbar {
   // float: right;
   // border: 1px solid $border;
-  width: auto;
+  width: 100%;
+  margin: auto;
 }
 
 #menu nav ul {
-  margin: 0;
+  width: 100%;
+  margin: auto;
   padding: 0;
 }
 
 #menu nav li {
   list-style-type: none;
   float: left;
-  margin-left: 20px;
 }
 
 #menu nav a {
