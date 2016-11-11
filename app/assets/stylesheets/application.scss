@@ -129,6 +129,11 @@ hr {
   border-color: $highlight;
 }
 
+#menu {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $border;
+}
+
 #menu nav {
   // float: right;
   // border: 1px solid $border;
@@ -287,6 +292,11 @@ input[type="submit"], .button {
     width: 25%;
   }
 
+  #menu {
+    padding-bottom: 0;
+    border-bottom: 1px solid $border;
+  }
+
   #menu nav li {
     float: none;
     width: 100%;
@@ -300,6 +310,7 @@ input[type="submit"], .button {
     text-align: center;
     padding: 10px;
     border-top: 1px solid $border;
+
     font-size: 11px;
   }
 
