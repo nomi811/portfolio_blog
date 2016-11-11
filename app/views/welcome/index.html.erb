@@ -8,14 +8,20 @@
         <hr>
         <p>Hi! My name is Nomi!</p>
         <%= image_tag("me-circle", alt: "A lovely picture of myself", class: 'image') %>
-        <p>I'm a Junior Web Developer and a dabbler of all things creative. God's creation inspires and feeds my soul.</p>
+        <p>I'm a Junior Web Developer and a dabbler of all things creative.</p>
         <p>I am currently seeking employment for a remote position where I can contribute, learn and grow.</p>
         <p class='word-link'>I gained my tech skills through the <a href="http://www.makersacademy.com/">Makers Academy</a> remote online bootcamp.  Their curriculum is project-based with an emphasis on test-driven development, object-oriented programming, pair programming and agile practices</p>
-        <p>
+        <p>I gained valuable experience working remotely with a cohort of people from 10 different countries using Github, Slack, Zoom and other remote technologies.
+        <br>
+        <br>
+        <p class='link'><%= link_to 'Read more...', about_index_path %></p>
+        <br>
+        <br>
+        <br>
         <p>Check out my Resume and CV!</p>
         <p><%= link_to(image_tag("resume_sqr", alt: "resume"), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf?X-Amz-Date=20161111T174512Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=bd630c01ef893fc04541576eab0a4264eb5899105630c2c902f1c440bf1d254c&X-Amz-Credential=ASIAIHTQ3GU4RTBDXINA/20161111/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEHYaDJOlMeBtCyk8kVluRiL6AWP3A3jgHO/qU2M7YcjHYPEykh4wzueXLoNQ%2B5zWYaQUfnxjK5s25CFK30jGneOodtGZrxs38IsD7wcUjfnGRRZiLT/sCbeYSNewL3IzxgEt/4AxEFA2siqqsVXX6lb80ZU5PULB9M5mZGL0q4V0kj6bU%2BM6UXcdtUQod8Y6wZeibt4egNfnw/RVC5HxYXcQxvdbPbl8r8DBahpGuUVVRxiIP5REk0VZbMen8Cwwkc9yKbeasqhv3J0mZpuFG2f4Apj4i05/lDiGL9mG9BCznWkpnBoJh9bWAtRHIHf9kkOJKxqFba6edWIzAhufjStkR9RoFSmKBLIddFooj4WXwQU%3D', target: '_blank') %>    <%= link_to(image_tag("CV", alt: "CV"), "https://github.com/nomi811/CV", target: "_blank") %></p>
-
-        <p class='link'><%= link_to 'Read more...', about_index_path %></p>
+        <br>
+        <br>
         <p><a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp; &nbsp;
         <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
       </div>

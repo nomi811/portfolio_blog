@@ -168,6 +168,7 @@ hr {
   padding: 1em 0;
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin-bottom: 3.8em;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
@@ -293,9 +294,10 @@ input[type="submit"], .button {
   }
 }
 
-@import 'welcome';
+@import '_welcome';
 @import '_photos_patterns';
-@import 'posts_projects';
+@import '_posts_projects';
+@import '_about';
 @import 'pygments';
 @import 'font-awesome';
 @import 'contacts';

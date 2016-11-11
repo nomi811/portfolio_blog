@@ -3,15 +3,11 @@
 <h1 id="page_title">Projects</h1>
 
 <div id="posts_wrapper" class="skinny_wrapper">
-  <div class="card">
-    <div class="container">
-      <% @projects.each do |project| %>
-        <div class="post">
-          <p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
-          <h2><a href="#"><%= link_to project.title, project %></a></h2>
-          <hr>
-        </div>
-      <% end %>
+  <% @projects.each do |project| %>
+    <div class="post">
+      <p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
+      <h2><a href="#"><%= link_to project.title, project %></a></h2>
+      <hr>
     </div>
-  </div>
+  <% end %>
 </div>
