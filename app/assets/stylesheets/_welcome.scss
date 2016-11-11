@@ -1,5 +1,12 @@
 #about {
   padding-bottom: 40px;
+  p.link a {
+    padding: .7em;
+    border: 2px solid $highlight;
+  }
+  p.word-link a {
+    border-bottom: 2px solid $highlight;
+  }
 }
 
 #projects {
