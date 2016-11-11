@@ -4,9 +4,9 @@
   <div id="squares">
     <ul>
       <li><%= link_to (image_tag("me_sqr", alt: "A lovely picture of myself", class: 'image')), about_index_path %></li>
-      <li><%= image_tag("resume_sqr", alt: "resume", class: 'image') %></li>
+      <li><%= link_to(image_tag("resume_sqr", alt: "resume", class: 'image'), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf?X-Amz-Date=20161111T134642Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=31ba60b43b4e56ccb0927cbf2efd7c8b94cff13ed6769e35993bd15ebc575d6d&X-Amz-Credential=ASIAIHTQ3GU4RTBDXINA/20161111/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEHYaDJOlMeBtCyk8kVluRiL6AWP3A3jgHO/qU2M7YcjHYPEykh4wzueXLoNQ%2B5zWYaQUfnxjK5s25CFK30jGneOodtGZrxs38IsD7wcUjfnGRRZiLT/sCbeYSNewL3IzxgEt/4AxEFA2siqqsVXX6lb80ZU5PULB9M5mZGL0q4V0kj6bU%2BM6UXcdtUQod8Y6wZeibt4egNfnw/RVC5HxYXcQxvdbPbl8r8DBahpGuUVVRxiIP5REk0VZbMen8Cwwkc9yKbeasqhv3J0mZpuFG2f4Apj4i05/lDiGL9mG9BCznWkpnBoJh9bWAtRHIHf9kkOJKxqFba6edWIzAhufjStkR9RoFSmKBLIddFooj4WXwQU%3D', target: '_blank') %></li>
       <li><%= link_to (image_tag("mealplanner_sqr", alt: "Meal Planner Project", class: 'image')), projects_path %></li>
-      <li><%= image_tag("CV", alt: "CV", class: 'image') %></li>
+      <li><%= link_to(image_tag("CV", alt: "CV", class: 'image'), "https://github.com/nomi811/CV", target: "_blank") %></li>
       <li><%= image_tag("3_birds_sqr", alt: "3 Birds", class: 'filler_image') %></li>
       <li><%= link_to (image_tag("hydrangea_sqr", alt: "Hydrangea", class: 'image')), posts_path %></li>
       <li><%= link_to (image_tag("berries_sqr", alt: "Red Berries", class: 'image')), photos_path %></li>
