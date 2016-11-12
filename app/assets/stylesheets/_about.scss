@@ -1,4 +1,8 @@
 .white {
-  background: none;
-  background-color: white;
+  #posts_wrapper .container {
+    padding: 50px 50px;
+  }
+  #posts_wrapper .container p {
+    width: 100%;
+  }
 }
