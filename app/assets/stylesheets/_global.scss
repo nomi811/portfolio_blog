@@ -9,6 +9,18 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: #03c4eb;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: #03c5ec;
+  outline: none;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 96%;
   max-width: 1280px;
