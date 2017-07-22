@@ -7,7 +7,7 @@ class Contact < MailForm::Base # :nodoc:
   def headers
     {
       subject: 'Contact Form',
-      to:      'nomi@nomivos.com',
+      to:      'nvoswork@gmail.com',
       from:    %("#{name}" <#{email}>)
     }
   end
