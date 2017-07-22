@@ -2,21 +2,19 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+body {
   background: #fff;
-  color: #666666;
-  font-family: 'Raleway', sans-serif;
+  color: $text-color;
+  font-family: $text-font;
 }
 
 a {
-  color: #03c4eb;
+  color: $accent-color;
   transition: 0.5s;
-  text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: lighten($accent-color, 0.2%);
   outline: none;
   text-decoration: none;
 }
