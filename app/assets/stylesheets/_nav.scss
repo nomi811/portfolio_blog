@@ -1,0 +1,60 @@
+#main_navigation {
+  padding: 1em 2% 1em 2%;
+  background-image: image-url("flower_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-bottom: 1px solid $border;
+}
+
+#main_navigation .logo_rest, .logo_hover {
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  padding: 1rem;
+  text-decoration: none;
+  color: $dark;
+  float: left;
+}
+
+#main_navigation .logo_hover, .logo_hover:hover {
+  display: none;
+  border-color: $highlight;
+}
+
+#main_navigation nav {
+  float: right;
+  border: 1px solid $border;
+}
+
+#main_navigation nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#main_navigation nav li {
+  list-style-type: none;
+  float: left;
+  margin: 11px;
+  background: #929292;
+  border: 1px solid $border;
+  border-radius: 11px;
+}
+
+#main_navigation nav a {
+  text-transform: uppercase;
+  font-weight: 700em;
+  color: $dark;
+  text-decoration: none;
+  margin: 1rem .8rem 1rem .8rem;
+  font-size: 1rem;
+  &:hover {
+    color: $highlight;
+  }
+}
+#main_navigation .bottom-aligner {
+  display: inline-block;
+  margin: 112px 0 0 0;
+  background: rgba(255, 255, 255, 0.3);
+}
