@@ -14,6 +14,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require social-share-button
 //= require lightbox
 //= require masonry/jquery.masonry
