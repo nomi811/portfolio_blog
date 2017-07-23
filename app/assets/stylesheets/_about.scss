@@ -1,8 +1,20 @@
-.white {
-  #posts_wrapper .container {
-    padding: 50px 50px;
+#about {
+  background: linear-gradient(rgba(255,255,255,0.9)), url(whiteflowers.png) fixed center;
+  padding: 80px 0;
+  background-size: cover;
+
+  .about-container {
+    background: url(me-circle.png) left top no-repeat;
   }
-  #posts_wrapper .container p {
-    width: 100%;
+  .about-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  .about-text {
+    line-height: 26px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

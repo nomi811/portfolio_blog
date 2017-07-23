@@ -30,6 +30,30 @@ a:hover, a:active, a:focus {
   background: #fff url("../assets/images/preloader.svg") no-repeat center center;
 }
 
+/*----------------
+  Sections Common
+-------------------*/
+.section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px
+}
+
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: $accent-color;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 /*
 .wrapper {
   width: 96%;

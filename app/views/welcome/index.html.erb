@@ -18,6 +18,61 @@
 
 <%= render 'layouts/nav' %>
 
+<section id="about">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">About</h3>
+        <div class="section-title-divider">
+          <p class="section-description">Get to know me better!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container about-container wow fadeInUp">
+    <div class="row">
+<!--
+      <div class="col-md-1 about-text">
+        <%= image_tag("me-circle", alt: "A lovely picture of myself", class: 'image') %>
+      </div>
+    -->
+      <div class="col-md-6 col-md-push-6 about-content">
+        <h2 class="about-title">Hi! My name is Nomi!</h2>
+        <p class="about-text">
+          I'm a Junior Web Developer and a dabbler of all things creative.</p>
+        <p class="about-text">I am currently seeking employment for a remote position where I can contribute, learn and grow.</p>
+        <p class='about-text'>I gained my tech skills through a lot of self-study and through the <a href="http://www.makersacademy.com/" target='_blank'>Makers Academy</a> remote online bootcamp.  Their curriculum is project-based with an emphasis on test-driven development, object-oriented programming, pair programming and agile practices</p>
+        <p class="about-text">I gained valuable experience working remotely with a cohort of people from 10 different countries using Github, Slack, Zoom and other remote technologies.</p>
+        <br>
+        <br>
+        <p class='link'><%= link_to 'Read more...', about_index_path %></p>
+        <br>
+        <br>
+        <br>
+        <p class="about-text">Check out my Resume and CV!</p>
+        <div class="col-md-6"><%= link_to(image_tag("resume_sqr", alt: "resume"), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf', target: '_blank') %>
+          <div class="details">
+            <h4>Resume</h4>
+            <span>link to PDF</span>
+          </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <%= link_to(image_tag("CV", alt: "CV"), "https://github.com/nomi811/CV", target: "_blank") %>
+        <div class="details">
+          <h4>CV</h4>
+          <span>link to Github</span>
+        </div>
+      </div>
+
+      <p><a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp; &nbsp;
+      <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+    </div> <!--col-md-6 col-md-push-6 about-content-->
+    </div> <!--row-->
+  </div> <!--container about-container wow fadeInUp-->
+</section>
+<!--
 <main class="wrapper wrapper_padding clearfix">
   <div id="about">
     <div class="card">
@@ -25,27 +80,11 @@
         <h2><%= link_to 'About', about_index_path %></h2>
         <hr>
         <p>Hi! My name is Nomi!</p>
-        <%= image_tag("me-circle", alt: "A lovely picture of myself", class: 'image') %>
-        <p>I'm a Junior Web Developer and a dabbler of all things creative.</p>
-        <p>I am currently seeking employment for a remote position where I can contribute, learn and grow.</p>
-        <p class='word-link'>I gained my tech skills through a lot of self-study and through the <a href="http://www.makersacademy.com/" target='_blank'>Makers Academy</a> remote online bootcamp.  Their curriculum is project-based with an emphasis on test-driven development, object-oriented programming, pair programming and agile practices</p>
-        <p>I gained valuable experience working remotely with a cohort of people from 10 different countries using Github, Slack, Zoom and other remote technologies.
-        <br>
-        <br>
-        <p class='link'><%= link_to 'Read more...', about_index_path %></p>
-        <br>
-        <br>
-        <br>
-        <p>Check out my Resume and CV!</p>
-        <p><%= link_to(image_tag("resume_sqr", alt: "resume"), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf', target: '_blank') %>  &nbsp; &nbsp; &nbsp; &nbsp;  <%= link_to(image_tag("CV", alt: "CV"), "https://github.com/nomi811/CV", target: "_blank") %></p>
-        <br>
-        <br>
-        <p><a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp; &nbsp;
-        <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+
       </div>
     </div>
   </div>
-
+-->
   <div id="projects">
     <div class="card">
       <div class="container">
