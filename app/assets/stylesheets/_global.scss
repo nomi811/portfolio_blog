@@ -43,12 +43,13 @@ a:hover, a:active, a:focus {
 
 .section-description {
   text-align: center;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .section-title-divider {
-  width: 50px;
-  height: 3px;
+  width: 200px;
+  height:1px;
   background: $accent-color;
   margin: 0 auto;
   margin-bottom: 20px;
