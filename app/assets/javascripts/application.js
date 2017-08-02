@@ -14,6 +14,15 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require custom
+//= require bootstrap/js/bootstrap
+//= require bootstrap/js/npm
+//= require wow/wow
+//= require superfish/hoverIntent
+//= require superfish/superfish
+//= require stickyjs/sticky
+//= require morphext/morphext
+//= require easing/easing
 //= require bootstrap-sprockets
 //= require social-share-button
 //= require lightbox
