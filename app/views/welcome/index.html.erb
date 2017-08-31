@@ -43,20 +43,12 @@
         <br>
         <br>
         <p class="about-text">Check out my Resume and CV!</p>
-        <div class="col-md-6"><%= link_to(image_tag("resume_sqr", alt: "resume"), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf', target: '_blank') %>
-          <div class="details">
-            <h4>Resume</h4>
-            <span>link to PDF</span>
-          </div>
-
+        <div class="col-md-6">
+          <%= link_to(image_tag("resume_sqr", alt: "resume", class: "portfolio-item"), 'https://s3.amazonaws.com/imagestoragenomi/nomi_resume.pdf', target: '_blank') %>
       </div>
 
       <div class="col-md-6">
         <%= link_to(image_tag("CV", alt: "CV"), "https://github.com/nomi811/CV", target: "_blank") %>
-        <div class="details">
-          <h4>CV</h4>
-          <span>link to Github</span>
-        </div>
       </div>
 
       <!-- <p><a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp; &nbsp;
