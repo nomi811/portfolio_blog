@@ -1,0 +1,29 @@
+#parallax {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(flower_background) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+
+  .parallax-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .parallax-text {
+    color: #fff;
+  }
+
+  .social {
+    margin-top: 15px;
+    a {
+      color: #b3b3b3;
+    }
+    a:hover {
+      color: #03c4eb;
+    }
+    i {
+      font-size: 60px;
+      margin: 0 10;
+    }
+  }
+}

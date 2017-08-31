@@ -59,19 +59,56 @@
     <!--row-->
   </div> <!--container about-container wow fadeInUp-->
 </section>
-<!--
-<main class="wrapper wrapper_padding clearfix">
-  <div id="about">
-    <div class="card">
-      <div class="container">
-        <h2><%= link_to 'About', about_index_path %></h2>
-        <hr>
-        <p>Hi! My name is Nomi!</p>
 
+<!--=================
+  Connections
+=====================-->
+
+<section id="parallax">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="parallax-title">Connections</h3>
+        <p class="parallax-text">See what I'm all about!</p>
+      </div>
+      <div class="social">
+        <a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
   </div>
--->
+</section>
+
+<section id="portfolio">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Portfolio</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description">Featuring my projects and artistic creations</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <%= link_to(image_tag("horse_show_connection1", alt: "Horse Show Connection", class: "portfolio-item"), "https://horseshowconnection.herokuapp.com/", target: "_blank") %>
+          <div class="details">
+            <h4>Horse Show Connection Website</h4>
+            <span>created on Rails</span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <%= link_to(image_tag("mealplanner_sqr", alt: "Meal Planner", class: "portfolio-item"), "https://meal-planner-ma.herokuapp.com/", target: "_blank") %>
+          <div class="details">
+            <h4>Meal Planner Website</h4>
+            <span>created on Rails</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
   <div id="projects">
     <div class="card">
       <div class="container">
