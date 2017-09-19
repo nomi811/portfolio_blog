@@ -155,4 +155,66 @@
 
 </section>
 
+<!--=====================
+  Contact Section
+========================-->
+<section id="contact">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="section-title">Contact Me</h3>
+        <div class="section-title-divider"></div>
+        <p class="section-description"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-md-push-2">
+        <div class="info">
+          <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Sioux City, IA  51108</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>nvoswork@gmail.com</p>
+          </div>
+
+        </div>
+      </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="sendmessage">
+              <%= form_for @contact do |f| %>
+                <%= f.label :name %> <br>
+                <%= f.text_field :name, required: true %>
+
+                <br>
+
+                <%= f.label :email %> <br>
+                <%= f.email_field :email, required: true %>
+
+
+                <%= f.label :message %> <br>
+                <%= f.text_area :message, as: :text %>
+
+                <div class="hidden">
+                  <%= f.label :nickname %> <br>
+                  <%= f.text_field :nickname, hint: 'leave this field blank' %>
+
+                </div>
+
+                <%= f.submit 'Send Message', class: 'button' %>
+
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <%= render 'layouts/footer' %>
