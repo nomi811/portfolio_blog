@@ -4,6 +4,6 @@ My personal website.
 
 This is my first solo project. I built my website from scratch with Ruby on Rails, JavaScript, jQuery, HTML, & CSS.
 
-I used my own books as well as tutorials and resources found on Google.
+I used my own books as well as tutorials and resources found on the internet.
 
-All the art and photography, including the logo were created by myself with Photoshop and Illustrator.
+In addition to my featured portfolio pieces, all the art and photography for the creation of this website, including the logo, were created by myself with Photoshop and Illustrator.
