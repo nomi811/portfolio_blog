@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Nomi/Projects/portfolio_blog/app/models/contact.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/contact.rb": [
         1,
         1,
         1,
@@ -17,7 +17,7 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/pattern.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/pattern.rb": [
         1,
         1,
         1,
@@ -32,7 +32,7 @@
         1,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/photo.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/photo.rb": [
         1,
         1,
         1,
@@ -47,7 +47,7 @@
         1,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/post.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/post.rb": [
         1,
         1,
         1,
@@ -62,7 +62,7 @@
         1,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/project.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/project.rb": [
         1,
         1,
         1,
@@ -76,14 +76,14 @@
         1,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/application_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/welcome_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/welcome_controller.rb": [
         1,
         1,
         31,
@@ -93,7 +93,7 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/patterns_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/patterns_controller.rb": [
         1,
         1,
         1,
@@ -146,7 +146,7 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/photos_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/photos_controller.rb": [
         1,
         1,
         1,
@@ -199,7 +199,7 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/posts_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/posts_controller.rb": [
         1,
         1,
         1,
@@ -252,7 +252,7 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/projects_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/projects_controller.rb": [
         1,
         1,
         1,
@@ -305,36 +305,13 @@
         null,
         null
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/about_controller.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/about_controller.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/controllers/contacts_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/Nomi/Projects/portfolio_blog/app/helpers/application_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/contacts_controller.rb": [
         0,
         0,
         0,
@@ -352,7 +329,30 @@
         0,
         0
       ],
-      "/Users/Nomi/Projects/portfolio_blog/app/models/user.rb": [
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/helpers/application_helper.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Nomi/coding/Projects/portfolio_blog/app/models/user.rb": [
         0,
         0,
         0,
@@ -365,6 +365,6 @@
         0
       ]
     },
-    "timestamp": 1477941266
+    "timestamp": 1507415386
   }
 }
