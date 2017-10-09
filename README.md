@@ -10,7 +10,7 @@
 
 ### Planning
 
-[Planning page] (https://github.com/nomi811/portfolio_blog/blob/master/planning.md)
+[Planning page](https://github.com/nomi811/portfolio_blog/blob/master/planning.md)
 
 ### Technologies used
 
@@ -28,7 +28,7 @@
 
 Demo
 
-[Heroku] (http://nomivos.herokuapp.com/)
+[Heroku](http://nomivos.herokuapp.com/)
 
 Locally
 
