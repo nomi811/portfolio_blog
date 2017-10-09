@@ -44,6 +44,9 @@ Open in browser:
 After setting up locally, in the project directory type the command:
 ``rspec``
 
+![screen shot 2017-10-09 at 3 06 48 pm](https://user-images.githubusercontent.com/17016297/31356447-a9b6ccfc-ad03-11e7-9753-e90479397e0b.png)
+![screen shot 2017-10-09 at 3 07 08 pm](https://user-images.githubusercontent.com/17016297/31356453-acbbcb50-ad03-11e7-9930-34d7c67eb041.png)
+
 ### Final remarks
 
 I used my own books as well as tutorials and resources found on the internet.
