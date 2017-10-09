@@ -2,9 +2,49 @@
 
 ![portfolio_blog_screenshot](https://user-images.githubusercontent.com/17016297/31353631-db525ed0-acf8-11e7-9b8e-183d98c0910b.png)
 
-My personal website.
+### Objectives of project
 
-This is my first solo project. I built my website from scratch with Ruby on Rails, JavaScript, jQuery, HTML, & CSS.
+- Create a personal portfolio/blog website that is to be used to blog, and share examples of my work.
+- Gain more experience by creating a Ruby on Rails App from scratch by myself.
+- Further my knowledge of HTML and CSS.
+
+### Planning
+
+[Planning page] (https://github.com/nomi811/portfolio_blog/blob/master/planning.md)
+
+### Technologies used
+
+- Ruby on Rails
+- JavaScript
+- jQuery
+- HTML
+- CSS
+- Rspec
+- PostgreSQL
+- Photoshop
+- Illustrator
+
+### Deploy
+
+Demo
+
+[Heroku] (http://nomivos.herokuapp.com/)
+
+Locally
+
+Clone repo to a local directory:
+``git clone git@github.com:nomi811/portfolio_blog.git``
+
+Run rails server:
+``rails s``
+
+Open in browser:
+``localhost:3000``
+
+### Testing
+
+After setting up locally, in the project directory type the command:
+``rspec``
 
 I used my own books as well as tutorials and resources found on the internet.
 
