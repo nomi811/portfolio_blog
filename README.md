@@ -26,11 +26,9 @@
 
 ### Deploy
 
-Demo
+- Deploy with [Heroku](http://nomivos.herokuapp.com/)
 
-[Heroku](http://nomivos.herokuapp.com/)
-
-Locally
+- Deploy Locally
 
 Clone repo to a local directory:
 ``git clone git@github.com:nomi811/portfolio_blog.git``
@@ -45,6 +43,8 @@ Open in browser:
 
 After setting up locally, in the project directory type the command:
 ``rspec``
+
+### Final remarks
 
 I used my own books as well as tutorials and resources found on the internet.
 
