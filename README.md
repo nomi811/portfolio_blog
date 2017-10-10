@@ -39,7 +39,7 @@ $ git clone git@github.com:nomi811/portfolio_blog.git
 
 Run rails server:
 ```
-rails s
+$ rails s
 ```
 
 Open in browser:
