@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '>= 2.3.1'
 
 gem 'font-awesome-rails'
-gem 'rails', '4.2.7.1'
+gem 'rails', '>= 4.2.7.1'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -36,7 +36,7 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda-matchers'
   gem 'rspec-collection_matchers'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'coveralls', '~> 0.8.15', require: false
 end
 

@@ -1,6 +1,6 @@
 require 'coveralls'
 require 'rails_helper'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require_relative 'helpers/test_helper'
 
 Coveralls.wear!('rails')

@@ -20,7 +20,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 
   config.include Paperclip::Shoulda::Matchers
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 end
 
 Shoulda::Matchers.configure do |config|
