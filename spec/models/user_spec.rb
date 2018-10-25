@@ -11,13 +11,13 @@ RSpec.describe User, type: :model do
     )
   end
 
-  context 'Authentication' do
+  context 'when Authentication' do
     it 'is authenticable' do
       expect(subject).to be_valid_password('password')
     end
   end
 
-  context 'Validations' do
+  context 'when Validations' do
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end
