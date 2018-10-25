@@ -36,7 +36,7 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda-matchers'
   gem 'rspec-collection_matchers'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'coveralls', '~> 0.8.15', require: false
 end
 
