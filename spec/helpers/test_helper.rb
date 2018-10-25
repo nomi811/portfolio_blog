@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sign_in
   visit '/users/sign_in'
   fill_in 'Email', with: 'test@gmail.com'

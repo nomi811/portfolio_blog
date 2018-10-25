@@ -1,16 +1,22 @@
-describe User do
-  subject {
+# frozen_string_literal: true
+
+require 'rails_helper'
+
+RSpec.describe User, type: :model do
+  subject do
     described_class.new(
       email: 'test@example.com',
       password: 'password',
       password_confirmation: 'password'
     )
-  }
+  end
+
   context 'Authentication' do
     it 'is authenticable' do
-      expect(subject.valid_password?('password')).to be_truthy
+      expect(subject).to be_valid_password('password')
     end
   end
+
   context 'Validations' do
     it 'is valid with valid attributes' do
       expect(subject).to be_valid

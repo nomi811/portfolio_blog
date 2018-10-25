@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddAttachmentImageToPatterns < ActiveRecord::Migration
   def self.up
     change_table :patterns do |t|

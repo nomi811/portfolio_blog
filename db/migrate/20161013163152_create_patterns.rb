@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreatePatterns < ActiveRecord::Migration
   def change
     create_table :patterns do |t|

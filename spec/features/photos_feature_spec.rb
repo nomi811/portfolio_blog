@@ -1,5 +1,7 @@
-feature 'Photos' do
-  background do
+# frozen_string_literal: true
+
+describe 'Photos' do
+  before do
     sign_up
   end
 

@@ -1,5 +1,7 @@
-feature 'Patterns' do
-  background do
+# frozen_string_literal: true
+
+describe 'Patterns' do
+  before do
     sign_up
   end
 

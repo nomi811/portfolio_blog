@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'coveralls'
 require 'rails_helper'
 require 'factory_bot_rails'

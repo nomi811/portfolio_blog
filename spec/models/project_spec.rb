@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 describe Project do
   subject { described_class.new }
+
   context 'Validations' do
     it 'is valid with valid attributes' do
       subject.title = 'New Project'

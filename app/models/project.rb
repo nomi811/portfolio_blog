@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Project < ActiveRecord::Base # :nodoc:
   extend FriendlyId
   friendly_id :title, use: :slugged

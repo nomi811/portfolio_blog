@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddSlugToPatterns < ActiveRecord::Migration
   def change
     add_column :patterns, :slug, :string

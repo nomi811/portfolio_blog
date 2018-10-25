@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController # :nodoc:
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :find_post, only: %i[show edit update destroy]
 
   def index
     @posts = Post.all.order('created_at desc').paginate(page: params[:page], per_page: 10)
@@ -20,11 +22,9 @@ class PostsController < ApplicationController # :nodoc:
     end
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @post.update post_params

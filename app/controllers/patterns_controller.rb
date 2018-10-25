@@ -1,20 +1,20 @@
+# frozen_string_literal: true
+
 class PatternsController < ApplicationController # :nodoc:
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_pattern, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :set_pattern, only: %i[show edit update destroy]
 
   def index
     @patterns = Pattern.all.order('created_at desc')
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @pattern = Pattern.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @pattern = Pattern.new pattern_params

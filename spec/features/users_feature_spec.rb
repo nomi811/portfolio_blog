@@ -1,4 +1,6 @@
-feature 'User access' do
+# frozen_string_literal: true
+
+describe 'User access' do
   context 'user not signed in and on index page' do
     it 'can not see "Sign in or Sign out" links' do
       visit '/'

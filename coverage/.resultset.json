@@ -2,6 +2,8 @@
   "RSpec": {
     "coverage": {
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/contact.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -18,6 +20,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/pattern.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -33,6 +37,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/photo.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -48,6 +54,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/post.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -63,6 +71,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/project.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -77,6 +87,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/application_controller.rb": [
+        null,
+        null,
         1,
         null,
         null,
@@ -84,6 +96,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/welcome_controller.rb": [
+        null,
+        null,
         1,
         1,
         31,
@@ -94,6 +108,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/patterns_controller.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -104,13 +120,11 @@
         null,
         1,
         null,
-        null,
         1,
         1,
         null,
         null,
         1,
-        null,
         null,
         1,
         1,
@@ -147,6 +161,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/photos_controller.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -157,13 +173,11 @@
         null,
         1,
         null,
-        null,
         1,
         1,
         null,
         null,
         1,
-        null,
         null,
         1,
         1,
@@ -200,6 +214,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/posts_controller.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -224,9 +240,7 @@
         null,
         1,
         null,
-        null,
         1,
-        null,
         null,
         1,
         1,
@@ -253,6 +267,8 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/projects_controller.rb": [
+        null,
+        null,
         1,
         1,
         1,
@@ -277,9 +293,7 @@
         null,
         1,
         null,
-        null,
         1,
-        null,
         null,
         1,
         1,
@@ -306,17 +320,20 @@
         null
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/about_controller.rb": [
-        0,
+        null,
+        null,
         0,
         0,
         0
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/controllers/contacts_controller.rb": [
+        null,
+        null,
         0,
         0,
         0,
         0,
-        0,
+        null,
         0,
         0,
         0,
@@ -330,13 +347,15 @@
         0
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/helpers/application_helper.rb": [
+        null,
+        null,
         0,
         0,
         0,
         0,
         0,
         0,
-        0,
+        null,
         0,
         0,
         0,
@@ -353,9 +372,11 @@
         0
       ],
       "/Users/Nomi/coding/Projects/portfolio_blog/app/models/user.rb": [
+        null,
+        null,
         0,
-        0,
-        0,
+        null,
+        null,
         0,
         0,
         0,
@@ -365,6 +386,6 @@
         0
       ]
     },
-    "timestamp": 1507662258
+    "timestamp": 1540502857
   }
 }

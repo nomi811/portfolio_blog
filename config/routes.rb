@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   resources :patterns
   resources :photos
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :projects
   resources :pattern_design
-  resources :contacts, only: [:new, :create]
+  resources :contacts, only: %i[new create]
   get 'welcome/index'
   root 'welcome#index'
 

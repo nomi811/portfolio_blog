@@ -1,14 +1,16 @@
-feature 'Posts' do
-  background do
+# frozen_string_literal: true
+
+describe 'Posts' do
+  before do
     sign_up
     visit '/posts/new'
   end
 
-  scenario 'correct page route actions' do
+  it 'correct page route actions' do
     expect(page).to have_content('New Post')
   end
 
-  scenario 'can create a post' do
+  it 'can create a post' do
     attach_file('Image', 'spec/files/images/heron-600px.jpg')
     fill_in 'Title', with: 'Heron'
     fill_in 'Write your article here', with: 'some content'
@@ -17,12 +19,12 @@ feature 'Posts' do
     expect(page).to have_css("img[src*='heron-600px.jpg']")
   end
 
-  scenario 'does not need an image to create a post' do
+  it 'does not need an image to create a post' do
     create_post
     expect(page).not_to have_css("img[scr*='missing.png']")
   end
 
-  scenario 'the index displays correct created posts information' do
+  it 'the index displays correct created posts information' do
     create_post
     create_post2
     visit '/posts'
@@ -30,12 +32,12 @@ feature 'Posts' do
     expect(page).to have_content('Second Post')
   end
 
-  scenario 'can view individual posts' do
+  it 'can view individual posts' do
     create_post
     expect(page).to have_content 'Right on, Nomi! Your article was successfully saved!'
   end
 
-  scenario 'can edit a posts' do
+  it 'can edit a posts' do
     create_post
     visit '/'
     click_link 'New Post'
@@ -45,7 +47,7 @@ feature 'Posts' do
     expect(page).to have_content 'Edited Post'
   end
 
-  scenario 'can delete posts' do
+  it 'can delete posts' do
     create_post
     visit '/'
     click_link 'New Post'

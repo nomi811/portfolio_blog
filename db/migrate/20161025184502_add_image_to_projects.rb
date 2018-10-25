@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddImageToProjects < ActiveRecord::Migration
   def change
     add_column :projects, :image, :string

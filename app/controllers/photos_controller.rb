@@ -1,20 +1,20 @@
+# frozen_string_literal: true
+
 class PhotosController < ApplicationController # :nodoc:
-  before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_photo, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: %i[index show]
+  before_action :set_photo, only: %i[show edit update destroy]
 
   def index
     @photos = Photo.all.order('created_at desc')
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @photo = Photo.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @photo = Photo.new photo_params

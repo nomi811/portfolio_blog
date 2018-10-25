@@ -1,5 +1,7 @@
-feature 'Projects' do
-  background do
+# frozen_string_literal: true
+
+describe 'Projects' do
+  before do
     sign_up
   end
 

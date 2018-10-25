@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationHelper # :nodoc:
   class HTMLwithPygments < Redcarpet::Render::HTML # :nodoc:
     def block_code(code, language)
