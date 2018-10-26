@@ -20,18 +20,24 @@ footer p span {
     Grabber
 =====================*/
 .social img {
-    height: 30px;
-    padding-right: 20px;
+  height: 30px;
+  padding-right: 20px;
 }
 
 .copyright p {
-    color: #4c4955;
+  color: #4c4955;
 }
 
+.contact img {
+  height: 30px;
+  padding: 80px 20px 0 0;
+  position: relative;
+  float: right;
+}
 footer .copyright {
-    position: relative;
-    padding-top: 80px;
-    left: 0px;
+  position: relative;
+  padding-top: 40px;
+  left: 0px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

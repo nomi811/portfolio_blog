@@ -24,7 +24,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#work">Work</a></li>
         <li><%= link_to 'Blog', posts_path %></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><%= link_to 'Contact', new_contact_path %></li>
         <% if user_signed_in? %>
           <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <% end %>
@@ -65,10 +65,13 @@
           </p>
         </div>
         <div class="social">
-
+          <br>
+          <br>
           <p>
             This site was hand coded &amp; hand crafted by me from scratch with Ruby on Rails, JavaScript, HTML5, CSS3, Photoshop, &amp; Illustrator.
           </p>
+          <br>
+          <br>
 
           <%= link_to(image_tag("linkedin-icon-red.svg", alt: "LinkedIn"), 'https://www.linkedin.com/in/nomi-vos-097aa082', target: '_blank') %>
 
@@ -90,7 +93,9 @@
       <div class="thirds">
         <div class="contact">
           <h3>Get in touch</h3>
-          <%= render 'new_contact' %>
+          <div class="text-center">
+            <button type="submit">Contact Me</button>
+          </div>
         </div>
       </div>
     </footer>
