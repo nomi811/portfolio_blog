@@ -42,165 +42,165 @@ nav ul li {
 }
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1380px) {
-
-  .wrapper {
-    max-width: 1000px;
-  }
-
-  #projects {
-    li {
-      margin: 0 4.6%;
-      padding: 0 9.1%;
-      width: 40%;
-    }
-    h3 {
-      margin: 0;
-    }
-  }
-
-  #posts {
-    li {
-      width: 42%;
-      padding: 0 9.5%;
-      margin: 0 2%;
-    }
-    h3 {
-      margin: 0;
-    }
-  }
-
-  #photos {
-    li {
-      width: 46%;
-      margin: 0 2%;
-      padding: 0 11%;
-    }
-    h3 {
-      margin: 0 0 1em;
-    }
-  }
-
-  #patterns {
-    li {
-      margin: 0 1%;
-      width: 48%;
-      padding: 0 12.5%;
-    }
-    h3 {
-      margin: 0 0 1em;
-    }
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .container {
-    .image {
-    height: 146px;
-    margin: 0;
-    }
-    p {
-      width: 79%;
-    }
-  }
-
-  #projects li {
-    margin: 0;
-    padding: 0 12.5%;
-    width: 50%;
-  }
-
-  #posts li {
-    width: 50%;
-    padding: 0 8.2%;
-    margin: 20px 0;
-  }
-
-  #photos li {
-    width: 50%;
-    padding: 0 12%;
-    margin: 20px 0;
-  }
-
-  #patterns li {
-    width: 50%;
-    padding: 0 13%;
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .container {
-    .image {
-    height: 146px;
-    margin: 0;
-    }
-    p {
-      width: 65%;
-    }
-    h2 {
-      text-align: center;
-    }
-  }
-
-  #projects li {
-    margin: 0;
-    padding: 0 8.5%;
-    width: 48%;
-  }
-
-  #posts li {
-    width: 49%;
-    padding: 0 4.2%;
-    margin: 0;
-  }
-
-  #photos li {
-    width: 49%;
-    padding: 0 8%;
-    margin: 0;
-  }
-
-  #patterns li {
-    width: 49%;
-    padding: 0 9.5%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 710px) {
-
-  .container {
-    .image {
-    height: 146px;
-    margin: 0;
-    }
-    p {
-      width: 65%;
-    }
-    h2 {
-      text-align: center
-    }
-  }
-
-  #projects li {
-    width: 100%;
-    text-align: center;
-  }
-
-  #posts li {
-    width: 100%;
-    text-align: center;
-  }
-
-  #photos li {
-    width: 100%;
-    text-align: center;
-  }
-
-  #patterns li {
-    width: 100%;
-    text-align: center;
-  }
-}
+// @media screen and (max-width: 1380px) {
+//
+//   .wrapper {
+//     max-width: 1000px;
+//   }
+//
+//   #projects {
+//     li {
+//       margin: 0 4.6%;
+//       padding: 0 9.1%;
+//       width: 40%;
+//     }
+//     h3 {
+//       margin: 0;
+//     }
+//   }
+//
+//   #posts {
+//     li {
+//       width: 42%;
+//       padding: 0 9.5%;
+//       margin: 0 2%;
+//     }
+//     h3 {
+//       margin: 0;
+//     }
+//   }
+//
+//   #photos {
+//     li {
+//       width: 46%;
+//       margin: 0 2%;
+//       padding: 0 11%;
+//     }
+//     h3 {
+//       margin: 0 0 1em;
+//     }
+//   }
+//
+//   #patterns {
+//     li {
+//       margin: 0 1%;
+//       width: 48%;
+//       padding: 0 12.5%;
+//     }
+//     h3 {
+//       margin: 0 0 1em;
+//     }
+//   }
+// }
+//
+// @media screen and (max-width: 960px) {
+//   .container {
+//     .image {
+//     height: 146px;
+//     margin: 0;
+//     }
+//     p {
+//       width: 79%;
+//     }
+//   }
+//
+//   #projects li {
+//     margin: 0;
+//     padding: 0 12.5%;
+//     width: 50%;
+//   }
+//
+//   #posts li {
+//     width: 50%;
+//     padding: 0 8.2%;
+//     margin: 20px 0;
+//   }
+//
+//   #photos li {
+//     width: 50%;
+//     padding: 0 12%;
+//     margin: 20px 0;
+//   }
+//
+//   #patterns li {
+//     width: 50%;
+//     padding: 0 13%;
+//     margin: 20px 0;
+//   }
+// }
+//
+// @media screen and (max-width: 768px) {
+//
+//   .container {
+//     .image {
+//     height: 146px;
+//     margin: 0;
+//     }
+//     p {
+//       width: 65%;
+//     }
+//     h2 {
+//       text-align: center;
+//     }
+//   }
+//
+//   #projects li {
+//     margin: 0;
+//     padding: 0 8.5%;
+//     width: 48%;
+//   }
+//
+//   #posts li {
+//     width: 49%;
+//     padding: 0 4.2%;
+//     margin: 0;
+//   }
+//
+//   #photos li {
+//     width: 49%;
+//     padding: 0 8%;
+//     margin: 0;
+//   }
+//
+//   #patterns li {
+//     width: 49%;
+//     padding: 0 9.5%;
+//     margin: 0;
+//   }
+// }
+//
+// @media screen and (max-width: 710px) {
+//
+//   .container {
+//     .image {
+//     height: 146px;
+//     margin: 0;
+//     }
+//     p {
+//       width: 65%;
+//     }
+//     h2 {
+//       text-align: center
+//     }
+//   }
+//
+//   #projects li {
+//     width: 100%;
+//     text-align: center;
+//   }
+//
+//   #posts li {
+//     width: 100%;
+//     text-align: center;
+//   }
+//
+//   #photos li {
+//     width: 100%;
+//     text-align: center;
+//   }
+//
+//   #patterns li {
+//     width: 100%;
+//     text-align: center;
+//   }
+// }
