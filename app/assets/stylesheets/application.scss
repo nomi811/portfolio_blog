@@ -59,7 +59,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   max-width: 100%;
   height: 3em;
-  border: 2px solid $border;
+  border: 2px solid #e9e9e9;
   padding: 1em;
   margin: .5em 0 2em 0;
 }
@@ -72,21 +72,21 @@ input[type="submit"], .button {
   margin: 0 0 3em 0;
   outline: none;
   background: transparent;
-  border: 2px solid $border;
+  border: 2px solid #e9e9e9;
   text-align: center;
   font-size: 1em;
-  color: $dark;
+  color: #4c4955;
   text-decoration: none;
   padding: 1em 2em;
   &:hover {
-    border: 2px solid $highlight;
-    color: $highlight;
+    border: 2px solid #ff533d;
+    color: #ff533d;
   }
 }
 
 .project_button {
-  background: $highlight;
-  color: $white;
+  background: #ff533d;
+  color: #1a2930;
   text-decoration: none;
   padding: 1em 2em;
 }
@@ -148,7 +148,7 @@ input[type="submit"], .button {
     width: 100%;
     text-align: center;
     padding: 10px;
-    border-top: 1px solid $border;
+    border-top: 1px solid #e9e9e9;
     font-size: 11px;
   }
 

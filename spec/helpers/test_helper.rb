@@ -32,24 +32,3 @@ def create_post2
   fill_in 'Write your article here', with: 'Some content'
   click_button 'Create Post'
 end
-
-def create_project
-  visit '/projects/new'
-  fill_in 'Title', with: 'New Project'
-  fill_in 'Description', with: 'Some content'
-  click_button 'Create Project'
-end
-
-def create_photo
-  visit '/photos/new'
-  fill_in 'Name', with: 'New Photo'
-  attach_file('Image', 'spec/files/images/Free-Flowing-600px.jpg')
-  click_button 'Create Photo'
-end
-
-def create_pattern
-  visit '/patterns/new'
-  fill_in 'Name', with: 'New Pattern'
-  attach_file('Image', 'spec/files/images/Free-Flowing-600px.jpg')
-  click_button 'Create Pattern'
-end

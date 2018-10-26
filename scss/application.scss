@@ -1,10 +1,10 @@
 @import 'normalize';
 
-$dark: #424652;
+#4c4955: #424652;
 $light: #9a9da4;
-$highlight: #8bc6db;
-$border: #e9e9e9;
-$white: #ffffff;
+#ff533d: #8bc6db;
+#e9e9e9: #e9e9e9;
+#1a2930: #ffffff;
 
 * {
   box-sizing: border-box;
@@ -40,7 +40,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
-  color: $dark;
+  color: #4c4955;
 }
 
 h1 {
@@ -81,29 +81,29 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid $highlight;
+  border-top: 2px solid #ff533d;
   margin: 2rem 0;
 }
 
 #main_navigation {
   padding: 2.5em 5%;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid #e9e9e9;
   .name {
     font-weight: 700;
     font-size: .8em;
     letter-spacing: 4px;
     text-transform: uppercase;
-    border: 2px solid $border;
+    border: 2px solid #e9e9e9;
     padding: 1rem;
     text-decoration: none;
-    color: $dark;
+    color: #4c4955;
     float: left;
   }
   nav {
     float: right;
     padding-top: 1.5rem;
     a {
-      color: $dark;
+      color: #4c4955;
       text-decoration: none;
       margin: 0 1rem;
       font-size: 1rem;
@@ -113,7 +113,7 @@ hr {
 
 #page_title {
   text-align: center;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid #e9e9e9;
   padding: 3em 0;
   font-size: 1rem;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ hr {
 
 #main_footer {
   padding: 2.5em 5%;
-  border-top: 1px solid $border;
+  border-top: 1px solid #e9e9e9;
   .copyright {
     float: left;
     font-size: .9em;
@@ -130,11 +130,11 @@ hr {
   nav {
     float: right;
     i {
-      color: $dark;
+      color: #4c4955;
       margin-left: 1em;
       padding-top: .2em;
       &:hover {
-        color: $highlight;
+        color: #ff533d;
       }
     }
   }
@@ -144,7 +144,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   max-width: 100%;
   height: 3em;
-  border: 2px solid $border;
+  border: 2px solid #e9e9e9;
   padding: 1em;
   margin: .5em 0 2em 0;
 }
@@ -156,15 +156,15 @@ textarea {
 input[type="submit"], .button {
   outline: none;
   background: transparent;
-  border: 2px solid $border;
+  border: 2px solid #e9e9e9;
   text-align: center;
   font-size: 1em;
-  color: $dark;
+  color: #4c4955;
   text-decoration: none;
   padding: 1em 2em;
   &:hover {
-    border: 2px solid $highlight;
-    color: $highlight;
+    border: 2px solid #ff533d;
+    color: #ff533d;
   }
 }
 

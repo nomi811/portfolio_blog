@@ -7,10 +7,10 @@ Error: File to import not found or unreadable: normalize.
 
 1: @import 'normalize';
 2: 
-3: $dark: #424652;
+3: #4c4955: #424652;
 4: $light: #9a9da4;
-5: $highlight: #8bc6db;
-6: $border: #e9e9e9;
+5: #ff533d: #8bc6db;
+6: #e9e9e9: #e9e9e9;
 
 Backtrace:
 /Users/Nomi/Projects/portfolio_blog/app/assets/stylesheets/application.css.scss:1
@@ -48,4 +48,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: normalize.\A        Load paths:\A          /Users/Nomi/Projects/portfolio_blog/app/assets/stylesheets\A          Sass::Globbing::Importer\A         on line 1 of /Users/Nomi/Projects/portfolio_blog/app/assets/stylesheets/application.css.scss\A \A 1: @import 'normalize';\A 2: \A 3: $dark: #424652;\A 4: $light: #9a9da4;\A 5: $highlight: #8bc6db;\A 6: $border: #e9e9e9;"; }
+  content: "Error: File to import not found or unreadable: normalize.\A        Load paths:\A          /Users/Nomi/Projects/portfolio_blog/app/assets/stylesheets\A          Sass::Globbing::Importer\A         on line 1 of /Users/Nomi/Projects/portfolio_blog/app/assets/stylesheets/application.css.scss\A \A 1: @import 'normalize';\A 2: \A 3: #4c4955: #424652;\A 4: $light: #9a9da4;\A 5: #ff533d: #8bc6db;\A 6: #e9e9e9: #e9e9e9;"; }
