@@ -1,0 +1,147 @@
+#posts_wrapper {
+  min-height: 600px;
+  padding: 3em 0;
+  .card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .container {
+    margin: 0 auto 3em auto;
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+  }
+  .post {
+    text-align: center;
+    .date {
+      font-size: .9em;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $dark;
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+    hr {
+      width: 10em;
+      margin: 3em auto;
+    }
+  }
+
+}
+
+// ---- Posts Show
+
+#post_show_content {
+  header {
+    text-align: center;
+    .date {
+      font-size: .9em;
+      color: $dark;
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+    }
+  }
+  hr {
+    margin: 3em auto;
+  }
+}
+
+#content p a {
+  color: $highlight;
+}
+
+#share_box {
+  text-align: center;
+  p {
+    padding: 0 0 1em 0;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark;
+    font-size: .8em;
+  }
+  i {
+    color: $dark;
+    padding: 1em 1.5em;
+    &:hover {
+      color: $highlight;
+      cursor: pointer;
+    }
+  }
+}
+
+#admin_links {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+  a {
+    color: $light;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+// ---- Pagination
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: box;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: $white;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: white;
+    }
+  }
+
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: $white;
+    }
+  }
+}
+
+.discus-custom {
+  background-color: white;
+  padding: 20px;
+}

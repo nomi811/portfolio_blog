@@ -1,5 +1,10 @@
 @import 'normalize';
 
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #e9e9e9;
+$white: #ffffff;
 /*==================
     Global
 ===================*/
@@ -178,13 +183,14 @@ input[type="submit"], .button {
 //   }
 // }
 
-@import '_welcome';
-@import '_skills';
-@import '_work';
 @import '_about';
-@import 'pygments';
-@import 'font-awesome';
 @import '_contacts';
 @import '_footer';
-@import 'social-share-button';
+@import '_posts.scss';
+@import '_skills';
+@import '_welcome';
+@import '_work';
+@import 'font-awesome';
 @import 'lightbox';
+@import 'pygments';
+@import 'social-share-button';
