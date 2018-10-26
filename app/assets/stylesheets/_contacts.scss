@@ -1,0 +1,26 @@
+/*====================
+    Contact
+======================*/
+
+.contact input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: .5em 0 1em 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contact button[type="submit"] {
+    margin: 2em 0 3em 0;
+    background: #ff533d;
+    border: 0;
+    padding: 1em 2em;
+    color: #1a2930;
+    text-align: center;
+}
+
+.contact button[type="submit"]:hover {
+    background: #c5c1c0;
+}

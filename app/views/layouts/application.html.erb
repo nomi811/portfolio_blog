@@ -2,33 +2,40 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Nomi Vos</title>
-  <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
+  <title>Nomi Vos | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Alice|Raleway:400,700|Sacramento" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   <%= csrf_meta_tags %>
 </head>
 
 <body>
-    <header id="main_navigation" class="clearfix">
-      <%= link_to (image_tag "NV-logo.png", class: 'logo_rest'), root_path %>
-      <%= link_to (image_tag "NV_logo_hover.png", class: 'logo_hover'), root_path %>
-      <nav class="bottom-aligner">
-        <div id="burger-nav">
-          <ul>
-            <li><%= link_to 'About', about_index_path %></li>
-            <li><%= link_to 'Projects', projects_path %></li>
-            <li><%= link_to 'Blog', posts_path %></li>
-            <li><%= link_to 'Images', photos_path %></li>
-            <li><%= link_to 'Design', patterns_path %></li>
-            <li><%= link_to 'Contact', new_contact_path %></li>
-            <% if user_signed_in? %>
-              <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-            <% end %>
-          </ul>
-        </div>
+  <!--=======================
+    Header <section>
+  ===========================-->
+    </section>
+    <header>
+      <div class="logo"><img src="app/images/logo.png" alt="logo"></div>
+      <nav>
+        <ul>
+          <!-- <li><%= link_to 'About', about_index_path %></li>
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to 'Blog', posts_path %></li>
+          <li><%= link_to 'Images', photos_path %></li>
+          <li><%= link_to 'Design', patterns_path %></li>
+          <li><%= link_to 'Contact', new_contact_path %></li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <% end %>
+        </ul>
       </nav>
+      <div class="tag">
+        <h2>Web Development & Design</h2>
+      </div>
     </header>
 
     <% if notice %>
