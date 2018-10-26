@@ -13,52 +13,89 @@
   <!--=======================
     Header <section>
   ===========================-->
-    </section>
-    <header>
-      <div class="logo"><img src="app/images/logo.png" alt="logo"></div>
-      <nav>
-        <ul>
-          <!-- <li><%= link_to 'About', about_index_path %></li>
-          <li><%= link_to 'Projects', projects_path %></li>
-          <li><%= link_to 'Blog', posts_path %></li>
-          <li><%= link_to 'Images', photos_path %></li>
-          <li><%= link_to 'Design', patterns_path %></li>
-          <li><%= link_to 'Contact', new_contact_path %></li> -->
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <% if user_signed_in? %>
-            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-          <% end %>
-        </ul>
-      </nav>
-      <div class="tag">
-        <h2>Web Development & Design</h2>
+
+  <header>
+    <div class="logo"><img src="app/images/logo.png" alt="logo"></div>
+    <nav>
+      <ul>
+        <!-- <li><%= link_to 'About', about_index_path %></li>
+        <li><%= link_to 'Projects', projects_path %></li>
+        <li><%= link_to 'Blog', posts_path %></li>
+        <li><%= link_to 'Images', photos_path %></li>
+        <li><%= link_to 'Design', patterns_path %></li>
+        <li><%= link_to 'Contact', new_contact_path %></li> -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <% if user_signed_in? %>
+          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="tag">
+      <h2>Web Development & Design</h2>
+    </div>
+  </header>
+
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+
+  <%= yield %>
+<!--====================
+  Footer <section>
+========================-->
+  <section id="contact">
+    <footer>
+
+<!--=====================
+  Grabber <section>
+=======================-->
+
+      <div class="two-thirds">
+        <div class="grabber">
+        <!-- <a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
+          <h3>I got this</h3>
+          <p>Daydream with me ..........</p>
+          <p>Your potential customer is getting online to do a search. They find your website. Your website strikes a chord with them. It speaks to them. They have no trouble navigating your site. Within minutes your potential customer transforms into an actual customer. A happy customer. A satisfied customer. A repeat customer.</p>
+          <p>creating and maintaining a website is a key component to any good marketing strategy.</p>
+          <p>
+            <span>I create websites. I can turn your daydream into reality.</span>
+          </p>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/nomi-vos-097aa082">
+            <img src="app/images/linkedin-icon-red.svg" alt="LinkedIn" target="_blank">
+          </a>
+          <a href="#https://github.com/nomi811">
+            <img src="app/images/github-icon-1-red.svg" alt="GitHub">
+          </a>
+        </div>
+
+        <p class="tech">This site was hand coded &amp; hand crafted by me from scratch with Ruby on Rails, JavaScript, HTML5, CSS3, Photoshop, &amp; Illustrator.</p>
+
+        <div class="copyright">
+          <p>&copy;2018 Nomi Vos</p>
+        </div>
       </div>
-    </header>
 
-    <% if notice %>
-      <p class="notice"><%= notice %></p>
-    <% elsif alert %>
-      <p class="alert"><%= alert %></p>
-    <% end %>
+<!--=================
+  Contact Section
+=====================-->
+      <div class="thirds">
+        <div class="contact">
+          <h3>Get in touch</h3>
+          
 
-    <%= yield %>
+        </div>
 
-    <footer class="footer-distributed">
-
-      <div class="footer-right">
-        <a href="https://github.com/nomi811" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/nomi-vos-097aa082" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      </div>
-
-      <p class="tech">This site was hand coded &amp; hand crafted by me from scratch with Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Photoshop, &amp; Illustrator.</p>
-
-      <div class="footer-left">
-        <p class="copyright">&copy;2016 Nomi Vos</p>
       </div>
     </footer>
+  </section>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
