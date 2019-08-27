@@ -1,7 +1,7 @@
 # portfolio_blog    [![Build Status](https://travis-ci.org/nomi811/portfolio_blog.svg?branch=master)](https://travis-ci.org/nomi811/portfolio_blog)   [![Coverage Status](https://coveralls.io/repos/github/nomi811/portfolio_blog/badge.svg?branch=master)](https://coveralls.io/github/nomi811/portfolio_blog?branch=master)
 
-![portfolio_blog_screenshot](https://user-images.githubusercontent.com/17016297/31353631-db525ed0-acf8-11e7-9b8e-183d98c0910b.png)
 
+![screen shot 2018-12-13 at 11 29 02 am](https://user-images.githubusercontent.com/17016297/49956687-72a48180-fecb-11e8-82d6-988ee5383504.png)
 ### Objectives of project
 
 - Create a personal portfolio/blog website that is to be used to blog, and share examples of my work.
